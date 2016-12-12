@@ -1010,7 +1010,8 @@ phStatus_t phhalHw_Rc663_Exchange(
         /*  Mask out CRC bits */
         if (pDataParams->wAdditionalInfo > 0)
         {
-            (*ppRxBuffer)[*pRxLength - 1] &= (uint8_t)(0xFF << (8 - pDataParams->wAdditionalInfo));
+            //TODO !
+          //  (*ppRxBuffer)[*pRxLength - 1] &= (uint8_t)(0xFF << (8 - pDataParams->wAdditionalInfo));
         }
     }
 

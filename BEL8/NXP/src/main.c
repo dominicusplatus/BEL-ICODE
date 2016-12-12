@@ -26,8 +26,6 @@
  *
  */
 
-#include <cr_section_macros.h>
-#include <NXP/crp.h>
 
 /**
  * Header for hardware configuration: bus interface, reset of attached reader ID, onboard LED handling etc.
@@ -55,7 +53,7 @@
 
 #include <stdio.h>
 
-__CRP const unsigned int CRP_WORD = CRP_NO_CRP ;
+const unsigned int CRP_WORD = 0 ;
 
 
 /*******************************************************************************
@@ -84,7 +82,7 @@ uint8_t                            bString[1];  // global string-charakter varia
  * main
  *
  * ------------------------------------------------------------------------------------------*/
-int main (void)
+int init_CLRC (void)
     {
     phStatus_t    status;
     uint8_t       bReg;

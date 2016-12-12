@@ -121,6 +121,10 @@
         </logicalFolder>
         <logicalFolder name="src" displayName="src" projectFiles="true">
         </logicalFolder>
+        <logicalFolder name="Stub" displayName="Stub" projectFiles="true">
+          <itemPath>../NXP/Stub/phOsal_Lpc17xx_Int.h</itemPath>
+          <itemPath>../NXP/Stub/phPlatform.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="types" displayName="types" projectFiles="true">
           <itemPath>../NXP/types/ph_NxpBuild.h</itemPath>
           <itemPath>../NXP/types/ph_NxpBuild_Lpc.h</itemPath>
@@ -129,6 +133,7 @@
           <itemPath>../NXP/types/ph_Status.h</itemPath>
           <itemPath>../NXP/types/ph_TypeDefs.h</itemPath>
         </logicalFolder>
+        <itemPath>../NXP/phhwConfig.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -244,8 +249,14 @@
           <itemPath>../NXP/src/icode_sli_ui.c</itemPath>
           <itemPath>../NXP/src/main.c</itemPath>
         </logicalFolder>
+        <logicalFolder name="Stub" displayName="Stub" projectFiles="true">
+          <itemPath>../NXP/Stub/phbalReg_Stub.c</itemPath>
+          <itemPath>../NXP/Stub/phOsal_Lpc17xx_Int.c</itemPath>
+          <itemPath>../NXP/Stub/phPlatform.c</itemPath>
+        </logicalFolder>
         <logicalFolder name="types" displayName="types" projectFiles="true">
         </logicalFolder>
+        <itemPath>../NXP/phhwConfig.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
@@ -269,7 +280,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>ICD3PlatformTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>1.36</languageToolchainVersion>
+        <languageToolchainVersion>1.33</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>
@@ -281,7 +292,7 @@
         </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
-          <parseOnProdLoad>false</parseOnProdLoad>
+          <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -298,7 +309,7 @@
         <property key="asmlist" value="true"/>
         <property key="define-macros" value=""/>
         <property key="extra-include-directories"
-                  value="..\NXP;..\NXP\intfs;..\NXP\types;..\NXP\comps;..\NXP\inc"/>
+                  value="..\NXP;..\NXP\intfs;..\NXP\types;..\NXP\comps;..\NXP\inc;..\NXP\Stub;..\NXP\comps\phbalReg\src\Stub"/>
         <property key="identifier-length" value="255"/>
         <property key="operation-mode" value="pro"/>
         <property key="opt-xc8-compiler-strict_ansi" value="false"/>

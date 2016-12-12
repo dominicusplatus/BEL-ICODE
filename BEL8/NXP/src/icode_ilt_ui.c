@@ -121,6 +121,7 @@ phStatus_t MainMenu_ILT(void *pHal)
     phpalI18000p3m3_Sw_DataParams_t       spalI18000p3m3;            /* PAL 18000p3m3 component */
     /* AL variables*/
     phalI18000p3m3_Sw_DataParams_t        salI18000p3m3;             /* AL 18000p3m3 component */
+    
     /* demo application variables */
     parameters_itl_t                      sDataParamILT;
 

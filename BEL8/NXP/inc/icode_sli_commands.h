@@ -47,7 +47,7 @@
 /*----------------------------------------------------------------------------------------------
  * Global macros and definitions
 ----------------------------------------------------------------------------------------------*/
-#define MAX_NUM_DETECTED_SLI_TAGS		50
+#define MAX_NUM_DETECTED_SLI_TAGS		4
 
 /* SLI constants */
 #define UID_15693_BYTE_LENGTH			8

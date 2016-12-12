@@ -74,6 +74,7 @@ phStatus_t Read_String(uint8_t * pBuffer, uint32_t dwLentgh)
         pBuffer[i] = 0;
         }
 
+    /*
     while ((bCharacter = fgetc(stdin)) != '\n')
         {
         if (j < dwLentgh)
@@ -87,6 +88,8 @@ phStatus_t Read_String(uint8_t * pBuffer, uint32_t dwLentgh)
             return PH_ERR_SUCCESS;
             }
         }
+     * */
+    
     printf("\n");
 
     return PH_ERR_SUCCESS;
@@ -100,6 +103,8 @@ phStatus_t Read_String(uint8_t * pBuffer, uint32_t dwLentgh)
  * 				numbers with decimal part equal and greater than 0.5 to nearest greater integer.
  *
  ---------------------------------------------------------------------------------------------*/
+
+/*
 uint16_t round(float number)
 {
 	uint16_t result;
@@ -111,6 +116,8 @@ uint16_t round(float number)
 
 	return result;
 }
+ * */
+
 /* ---------------------------------------------------------------------------------------------
  *   End of File
  ---------------------------------------------------------------------------------------------*/

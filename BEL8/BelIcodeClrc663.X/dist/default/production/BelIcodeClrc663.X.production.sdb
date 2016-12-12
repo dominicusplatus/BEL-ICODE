@@ -1,0 +1,1716 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18LF46K80 ]
+[d frameptr 4065 ]
+"3572 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663.c
+[e E268 phOsal_EventType `ui
+E_PH_OSAL_EVT_WAITING 0
+E_PH_OSAL_EVT_RF 1
+E_PH_OSAL_EVT_RXDATA_AVAILABLE 2
+E_PH_OSAL_EVT_TXDATA_AVAILABLE 4
+E_PH_OSAL_EVT_RTO_TIMEOUT 8
+E_PH_OSAL_EVT_ERROR 16
+E_PH_OSAL_EVT_ABORT 32
+E_PH_OSAL_EVT_LLCP_ACTIVATED 64
+E_PH_OSAL_EVT_TYPE_ALL 63
+E_PH_OSAL_SIZEADJUST_EVT_TYPE -1
+]
+[e E302 phhalRf_EventSource `ui
+E_PH_OSAL_EVT_SRC_ISR 0
+E_PH_OSAL_EVT_SRC_HAL 1
+E_PH_OSAL_EVT_SRC_LIB 2
+E_PH_OSAL_EVT_SRC_APP 3
+E_PH_OSAL_EVT_SRC_NONE 4
+E_PH_OSAL_SIZEADJUST_EVT_SRC -1
+]
+[e E310 phhalRf_EventDestination `ui
+E_PH_OSAL_EVT_DEST_HAL 0
+E_PH_OSAL_EVT_DEST_LIB 1
+E_PH_OSAL_EVT_DEST_APP 2
+E_PH_OSAL_EVT_DEST_NONE 3
+E_PH_OSAL_SIZEADJUST_EVT_DEST -1
+]
+"2447 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663_Int.c
+[e E268 phOsal_EventType `ui
+E_PH_OSAL_EVT_WAITING 0
+E_PH_OSAL_EVT_RF 1
+E_PH_OSAL_EVT_RXDATA_AVAILABLE 2
+E_PH_OSAL_EVT_TXDATA_AVAILABLE 4
+E_PH_OSAL_EVT_RTO_TIMEOUT 8
+E_PH_OSAL_EVT_ERROR 16
+E_PH_OSAL_EVT_ABORT 32
+E_PH_OSAL_EVT_LLCP_ACTIVATED 64
+E_PH_OSAL_EVT_TYPE_ALL 63
+E_PH_OSAL_SIZEADJUST_EVT_TYPE -1
+]
+[e E302 phhalRf_EventSource `ui
+E_PH_OSAL_EVT_SRC_ISR 0
+E_PH_OSAL_EVT_SRC_HAL 1
+E_PH_OSAL_EVT_SRC_LIB 2
+E_PH_OSAL_EVT_SRC_APP 3
+E_PH_OSAL_EVT_SRC_NONE 4
+E_PH_OSAL_SIZEADJUST_EVT_SRC -1
+]
+"55 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663_Wait.c
+[e E268 phOsal_EventType `ui
+E_PH_OSAL_EVT_WAITING 0
+E_PH_OSAL_EVT_RF 1
+E_PH_OSAL_EVT_RXDATA_AVAILABLE 2
+E_PH_OSAL_EVT_TXDATA_AVAILABLE 4
+E_PH_OSAL_EVT_RTO_TIMEOUT 8
+E_PH_OSAL_EVT_ERROR 16
+E_PH_OSAL_EVT_ABORT 32
+E_PH_OSAL_EVT_LLCP_ACTIVATED 64
+E_PH_OSAL_EVT_TYPE_ALL 63
+E_PH_OSAL_SIZEADJUST_EVT_TYPE -1
+]
+"69
+[e E302 phhalRf_EventSource `ui
+E_PH_OSAL_EVT_SRC_ISR 0
+E_PH_OSAL_EVT_SRC_HAL 1
+E_PH_OSAL_EVT_SRC_LIB 2
+E_PH_OSAL_EVT_SRC_APP 3
+E_PH_OSAL_EVT_SRC_NONE 4
+E_PH_OSAL_SIZEADJUST_EVT_SRC -1
+]
+"35 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phOsal/src/Nortos/phOsal_Nortos.c
+[e E232 phOsal_EventType `ui
+E_PH_OSAL_EVT_WAITING 0
+E_PH_OSAL_EVT_RF 1
+E_PH_OSAL_EVT_RXDATA_AVAILABLE 2
+E_PH_OSAL_EVT_TXDATA_AVAILABLE 4
+E_PH_OSAL_EVT_RTO_TIMEOUT 8
+E_PH_OSAL_EVT_ERROR 16
+E_PH_OSAL_EVT_ABORT 32
+E_PH_OSAL_EVT_LLCP_ACTIVATED 64
+E_PH_OSAL_EVT_TYPE_ALL 63
+E_PH_OSAL_SIZEADJUST_EVT_TYPE -1
+]
+"40
+[e E266 phhalRf_EventSource `ui
+E_PH_OSAL_EVT_SRC_ISR 0
+E_PH_OSAL_EVT_SRC_HAL 1
+E_PH_OSAL_EVT_SRC_LIB 2
+E_PH_OSAL_EVT_SRC_APP 3
+E_PH_OSAL_EVT_SRC_NONE 4
+E_PH_OSAL_SIZEADJUST_EVT_SRC -1
+]
+"44
+[e E274 phhalRf_EventDestination `ui
+E_PH_OSAL_EVT_DEST_HAL 0
+E_PH_OSAL_EVT_DEST_LIB 1
+E_PH_OSAL_EVT_DEST_APP 2
+E_PH_OSAL_EVT_DEST_NONE 3
+E_PH_OSAL_SIZEADJUST_EVT_DEST -1
+]
+"48
+[e E244 phOsal_EventDetail `ui
+E_PH_OSAL_EVT_DETAIL_SUCCESS 0
+E_PH_OSAL_EVT_DETAIL_IO_TIMEOUT_ERROR 1
+E_PH_OSAL_EVT_DETAIL_INTEGRITY_ERROR 2
+E_PH_OSAL_EVT_DETAIL_COLLISION_ERROR 3
+E_PH_OSAL_EVT_DETAIL_BUFFER_OVERFLOW 4
+E_PH_OSAL_EVT_DETAIL_FRAMING_ERROR 5
+E_PH_OSAL_EVT_DETAIL_PROTOCOL_ERROR 6
+E_PH_OSAL_EVT_DETAIL_AUTH_ERROR 7
+E_PH_OSAL_EVT_DETAIL_READ_WRITE_ERROR 8
+E_PH_OSAL_EVT_DETAIL_TEMPERATURE_ERROR 9
+E_PH_OSAL_EVT_DETAIL_RF_ERROR 10
+E_PH_OSAL_EVT_DETAIL_INTERFACE_ERROR 11
+E_PH_OSAL_EVT_DETAIL_LENGTH_ERROR 12
+E_PH_OSAL_EVT_DETAIL_RESOURCE_ERROR 13
+E_PH_OSAL_EVT_DETAIL_TX_NAK_ERROR 14
+E_PH_OSAL_EVT_DETAIL_RX_NAK_ERROR 15
+E_PH_OSAL_EVT_DETAIL_EXT_RF_ERROR 16
+E_PH_OSAL_EVT_DETAIL_ABORTED 17
+E_PH_OSAL_EVT_DETAIL_INTERNAL_ERROR 127
+E_PH_OSAL_SIZEADJUST_EVT_DETAIL -1
+]
+"71 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_sli_commands.c
+[e E19414 eSliType_e `uc
+Sli 0
+Slix2 1
+Slix 2
+Sli_RFU 3
+]
+"98 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_sli_ui.c
+[e E19414 eSliType_e `uc
+Sli 0
+Slix2 1
+Slix 2
+Sli_RFU 3
+]
+"486 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/phhwConfig.c
+[e E18598 phOsal_EventType `ui
+E_PH_OSAL_EVT_WAITING 0
+E_PH_OSAL_EVT_RF 1
+E_PH_OSAL_EVT_RXDATA_AVAILABLE 2
+E_PH_OSAL_EVT_TXDATA_AVAILABLE 4
+E_PH_OSAL_EVT_RTO_TIMEOUT 8
+E_PH_OSAL_EVT_ERROR 16
+E_PH_OSAL_EVT_ABORT 32
+E_PH_OSAL_EVT_LLCP_ACTIVATED 64
+E_PH_OSAL_EVT_TYPE_ALL 63
+E_PH_OSAL_SIZEADJUST_EVT_TYPE -1
+]
+[e E18632 phhalRf_EventSource `ui
+E_PH_OSAL_EVT_SRC_ISR 0
+E_PH_OSAL_EVT_SRC_HAL 1
+E_PH_OSAL_EVT_SRC_LIB 2
+E_PH_OSAL_EVT_SRC_APP 3
+E_PH_OSAL_EVT_SRC_NONE 4
+E_PH_OSAL_SIZEADJUST_EVT_SRC -1
+]
+[e E18640 phhalRf_EventDestination `ui
+E_PH_OSAL_EVT_DEST_HAL 0
+E_PH_OSAL_EVT_DEST_LIB 1
+E_PH_OSAL_EVT_DEST_APP 2
+E_PH_OSAL_EVT_DEST_NONE 3
+E_PH_OSAL_SIZEADJUST_EVT_DEST -1
+]
+"37 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phalI15693/src/phalI15693.c
+[v _phalI15693_ReadSingleBlock phalI15693_ReadSingleBlock `(us  1 e 2 0 ]
+"98
+[v _phalI15693_ExtendedReadSingleBlock phalI15693_ExtendedReadSingleBlock `(us  1 e 2 0 ]
+"159
+[v _phalI15693_ReadMultipleBlocks phalI15693_ReadMultipleBlocks `(us  1 e 2 0 ]
+"223
+[v _phalI15693_ExtendedReadMultipleBlocks phalI15693_ExtendedReadMultipleBlocks `(us  1 e 2 0 ]
+"287
+[v _phalI15693_WriteSingleBlock phalI15693_WriteSingleBlock `(us  1 e 2 0 ]
+"342
+[v _phalI15693_ExtendedWriteSingleBlock phalI15693_ExtendedWriteSingleBlock `(us  1 e 2 0 ]
+"397
+[v _phalI15693_WriteMultipleBlocks phalI15693_WriteMultipleBlocks `(us  1 e 2 0 ]
+"455
+[v _phalI15693_ExtendedWriteMultipleBlocks phalI15693_ExtendedWriteMultipleBlocks `(us  1 e 2 0 ]
+"513
+[v _phalI15693_LockBlock phalI15693_LockBlock `(us  1 e 2 0 ]
+"563
+[v _phalI15693_ExtendedLockBlock phalI15693_ExtendedLockBlock `(us  1 e 2 0 ]
+"613
+[v _phalI15693_WriteAFI phalI15693_WriteAFI `(us  1 e 2 0 ]
+"663
+[v _phalI15693_LockAFI phalI15693_LockAFI `(us  1 e 2 0 ]
+"710
+[v _phalI15693_WriteDSFID phalI15693_WriteDSFID `(us  1 e 2 0 ]
+"760
+[v _phalI15693_LockDSFID phalI15693_LockDSFID `(us  1 e 2 0 ]
+"807
+[v _phalI15693_GetSystemInformation phalI15693_GetSystemInformation `(us  1 e 2 0 ]
+"862
+[v _phalI15693_ExtendedGetSystemInformation phalI15693_ExtendedGetSystemInformation `(us  1 e 2 0 ]
+"917
+[v _phalI15693_GetMultipleBlockSecurityStatus phalI15693_GetMultipleBlockSecurityStatus `(us  1 e 2 0 ]
+"978
+[v _phalI15693_ExtendedGetMultipleBlockSecurityStatus phalI15693_ExtendedGetMultipleBlockSecurityStatus `(us  1 e 2 0 ]
+"37 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phalI15693/src/Sw/phalI15693_Sw.c
+[v _phalI15693_Sw_Init phalI15693_Sw_Init `(us  1 e 2 0 ]
+"57
+[v _phalI15693_Sw_ReadSingleBlock phalI15693_Sw_ReadSingleBlock `(us  1 e 2 0 ]
+"109
+[v _phalI15693_Sw_ExtendedReadSingleBlock phalI15693_Sw_ExtendedReadSingleBlock `(us  1 e 2 0 ]
+"162
+[v _phalI15693_Sw_ReadMultipleBlocks phalI15693_Sw_ReadMultipleBlocks `(us  1 e 2 0 ]
+"231
+[v _phalI15693_Sw_ExtendedReadMultipleBlocks phalI15693_Sw_ExtendedReadMultipleBlocks `(us  1 e 2 0 ]
+"302
+[v _phalI15693_Sw_WriteSingleBlock phalI15693_Sw_WriteSingleBlock `(us  1 e 2 0 ]
+"356
+[v _phalI15693_Sw_ExtendedWriteSingleBlock phalI15693_Sw_ExtendedWriteSingleBlock `(us  1 e 2 0 ]
+"411
+[v _phalI15693_Sw_WriteMultipleBlocks phalI15693_Sw_WriteMultipleBlocks `(us  1 e 2 0 ]
+"481
+[v _phalI15693_Sw_ExtendedWriteMultipleBlocks phalI15693_Sw_ExtendedWriteMultipleBlocks `(us  1 e 2 0 ]
+"553
+[v _phalI15693_Sw_LockBlock phalI15693_Sw_LockBlock `(us  1 e 2 0 ]
+"596
+[v _phalI15693_Sw_ExtendedLockBlock phalI15693_Sw_ExtendedLockBlock `(us  1 e 2 0 ]
+"640
+[v _phalI15693_Sw_WriteAFI phalI15693_Sw_WriteAFI `(us  1 e 2 0 ]
+"683
+[v _phalI15693_Sw_LockAFI phalI15693_Sw_LockAFI `(us  1 e 2 0 ]
+"724
+[v _phalI15693_Sw_WriteDSFID phalI15693_Sw_WriteDSFID `(us  1 e 2 0 ]
+"767
+[v _phalI15693_Sw_LockDSFID phalI15693_Sw_LockDSFID `(us  1 e 2 0 ]
+"808
+[v _phalI15693_Sw_GetSystemInformation phalI15693_Sw_GetSystemInformation `(us  1 e 2 0 ]
+"881
+[v _phalI15693_Sw_ExtendedGetSystemInformation phalI15693_Sw_ExtendedGetSystemInformation `(us  1 e 2 0 ]
+"954
+[v _phalI15693_Sw_GetMultipleBlockSecurityStatus phalI15693_Sw_GetMultipleBlockSecurityStatus `(us  1 e 2 0 ]
+"1006
+[v _phalI15693_Sw_ExtendedGetMultipleBlockSecurityStatus phalI15693_Sw_ExtendedGetMultipleBlockSecurityStatus `(us  1 e 2 0 ]
+"1066
+[v _phalI15693_Sw_WriteAlikeHandling phalI15693_Sw_WriteAlikeHandling `(us  1 e 2 0 ]
+"1114
+[v _phalI15693_Sw_Int_SetOptionBit phalI15693_Sw_Int_SetOptionBit `(us  1 e 2 0 ]
+"38 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phalI18000p3m3/src/phalI18000p3m3.c
+[v _phalI18000p3m3_Ack phalI18000p3m3_Ack `(us  1 e 2 0 ]
+"104
+[v _phalI18000p3m3_ReqRn phalI18000p3m3_ReqRn `(us  1 e 2 0 ]
+"165
+[v _phalI18000p3m3_Read phalI18000p3m3_Read `(us  1 e 2 0 ]
+"248
+[v _phalI18000p3m3_Write phalI18000p3m3_Write `(us  1 e 2 0 ]
+"314
+[v _phalI18000p3m3_Kill phalI18000p3m3_Kill `(us  1 e 2 0 ]
+"371
+[v _phalI18000p3m3_Lock phalI18000p3m3_Lock `(us  1 e 2 0 ]
+"425
+[v _phalI18000p3m3_Access phalI18000p3m3_Access `(us  1 e 2 0 ]
+"478
+[v _phalI18000p3m3_BlockWrite phalI18000p3m3_BlockWrite `(us  1 e 2 0 ]
+"544
+[v _phalI18000p3m3_BlockErase phalI18000p3m3_BlockErase `(us  1 e 2 0 ]
+"605
+[v _phalI18000p3m3_BlockPermaLock phalI18000p3m3_BlockPermaLock `(us  1 e 2 0 ]
+"701
+[v _phalI18000p3m3_SetHandle phalI18000p3m3_SetHandle `(us  1 e 2 0 ]
+"36 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phalI18000p3m3/src/Sw/phalI18000p3m3_Sw.c
+[v _phalI18000p3m3_Sw_Init phalI18000p3m3_Sw_Init `(us  1 e 2 0 ]
+"58
+[v _phalI18000p3m3_Sw_Ack phalI18000p3m3_Sw_Ack `(us  1 e 2 0 ]
+"102
+[v _phalI18000p3m3_Sw_ReqRn phalI18000p3m3_Sw_ReqRn `(us  1 e 2 0 ]
+"194
+[v _phalI18000p3m3_Sw_Read phalI18000p3m3_Sw_Read `(us  1 e 2 0 ]
+"304
+[v _phalI18000p3m3_Sw_Write phalI18000p3m3_Sw_Write `(us  1 e 2 0 ]
+"415
+[v _phalI18000p3m3_Sw_Kill phalI18000p3m3_Sw_Kill `(us  1 e 2 0 ]
+"584
+[v _phalI18000p3m3_Sw_Lock phalI18000p3m3_Sw_Lock `(us  1 e 2 0 ]
+"658
+[v _phalI18000p3m3_Sw_Access phalI18000p3m3_Sw_Access `(us  1 e 2 0 ]
+"799
+[v _phalI18000p3m3_Sw_BlockWrite phalI18000p3m3_Sw_BlockWrite `(us  1 e 2 0 ]
+"951
+[v _phalI18000p3m3_Sw_BlockErase phalI18000p3m3_Sw_BlockErase `(us  1 e 2 0 ]
+"1031
+[v _phalI18000p3m3_Sw_BlockPermaLock phalI18000p3m3_Sw_BlockPermaLock `(us  1 e 2 0 ]
+"1229
+[v _phalI18000p3m3_Sw_SetHandle phalI18000p3m3_Sw_SetHandle `(us  1 e 2 0 ]
+"34 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phalI18000p3m3/src/Sw/phalI18000p3m3_Sw_Int.c
+[v _phalI18000p3m3_Sw_ParseError phalI18000p3m3_Sw_ParseError `(us  1 e 2 0 ]
+"37 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phalSli/src/phalSli.c
+[v _phalSli_GetRandomNumber phalSli_GetRandomNumber `(us  1 e 2 0 ]
+"91
+[v _phalSli_SetPWD phalSli_SetPWD `(us  1 e 2 0 ]
+"142
+[v _phalSli_WritePWD phalSli_WritePWD `(us  1 e 2 0 ]
+"193
+[v _phalSli_LockPWD phalSli_LockPWD `(us  1 e 2 0 ]
+"240
+[v _phalSli_64BitPWDProtection phalSli_64BitPWDProtection `(us  1 e 2 0 ]
+"284
+[v _phalSli_ProtectPage phalSli_ProtectPage `(us  1 e 2 0 ]
+"334
+[v _phalSli_LockPageProtectionCondition phalSli_LockPageProtectionCondition `(us  1 e 2 0 ]
+"381
+[v _phalSli_GetMultipleBlockProtStatus phalSli_GetMultipleBlockProtStatus `(us  1 e 2 0 ]
+"442
+[v _phalSli_Destroy phalSli_Destroy `(us  1 e 2 0 ]
+"486
+[v _phalSli_EnablePrivacy phalSli_EnablePrivacy `(us  1 e 2 0 ]
+"530
+[v _phalSli_ReadSignature phalSli_ReadSignature `(us  1 e 2 0 ]
+"584
+[v _phalSli_SetEAS phalSli_SetEAS `(us  1 e 2 0 ]
+"628
+[v _phalSli_ResetEAS phalSli_ResetEAS `(us  1 e 2 0 ]
+"672
+[v _phalSli_LockEAS phalSli_LockEAS `(us  1 e 2 0 ]
+"716
+[v _phalSli_EASAlarm phalSli_EASAlarm `(us  1 e 2 0 ]
+"777
+[v _phalSli_PwdProtectEAS phalSli_PwdProtectEAS `(us  1 e 2 0 ]
+"821
+[v _phalSli_WriteEAS_ID phalSli_WriteEAS_ID `(us  1 e 2 0 ]
+"869
+[v _phalSli_ReadEPC phalSli_ReadEPC `(us  1 e 2 0 ]
+"922
+[v _phalSli_GetNxpSystemInfo phalSli_GetNxpSystemInfo `(us  1 e 2 0 ]
+"988
+[v _phalSli_GetRandomNumberSetPWD phalSli_GetRandomNumberSetPWD `(us  1 e 2 0 ]
+"38 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phalSli/src/Sw/phalSli_Sw.c
+[v _phalSli_Sw_Init phalSli_Sw_Init `(us  1 e 2 0 ]
+"58
+[v _phalSli_Sw_GetRandomNumber phalSli_Sw_GetRandomNumber `(us  1 e 2 0 ]
+"100
+[v _phalSli_Sw_SetPWD phalSli_Sw_SetPWD `(us  1 e 2 0 ]
+"134
+[v _phalSli_Sw_WritePWD phalSli_Sw_WritePWD `(us  1 e 2 0 ]
+"168
+[v _phalSli_Sw_LockPWD phalSli_Sw_LockPWD `(us  1 e 2 0 ]
+"200
+[v _phalSli_Sw_64BitPWDProtection phalSli_Sw_64BitPWDProtection `(us  1 e 2 0 ]
+"230
+[v _phalSli_Sw_ProtectPage phalSli_Sw_ProtectPage `(us  1 e 2 0 ]
+"264
+[v _phalSli_Sw_LockPageProtectionCondition phalSli_Sw_LockPageProtectionCondition `(us  1 e 2 0 ]
+"296
+[v _phalSli_Sw_GetMultipleBlockProtStatus phalSli_Sw_GetMultipleBlockProtStatus `(us  1 e 2 0 ]
+"357
+[v _phalSli_Sw_Destroy phalSli_Sw_Destroy `(us  1 e 2 0 ]
+"385
+[v _phalSli_Sw_EnablePrivacy phalSli_Sw_EnablePrivacy `(us  1 e 2 0 ]
+"413
+[v _phalSli_Sw_ReadSignature phalSli_Sw_ReadSignature `(us  1 e 2 0 ]
+"455
+[v _phalSli_Sw_SetEAS phalSli_Sw_SetEAS `(us  1 e 2 0 ]
+"483
+[v _phalSli_Sw_ResetEAS phalSli_Sw_ResetEAS `(us  1 e 2 0 ]
+"511
+[v _phalSli_Sw_LockEAS phalSli_Sw_LockEAS `(us  1 e 2 0 ]
+"539
+[v _phalSli_Sw_EASAlarm phalSli_Sw_EASAlarm `(us  1 e 2 0 ]
+"610
+[v _phalSli_Sw_PwdProtectEAS phalSli_Sw_PwdProtectEAS `(us  1 e 2 0 ]
+"638
+[v _phalSli_Sw_WriteEAS_ID phalSli_Sw_WriteEAS_ID `(us  1 e 2 0 ]
+"669
+[v _phalSli_Sw_ReadEPC phalSli_Sw_ReadEPC `(us  1 e 2 0 ]
+"710
+[v _phalSli_Sw_GetNxpSystemInfo phalSli_Sw_GetNxpSystemInfo `(us  1 e 2 0 ]
+"772
+[v _phalSli_Sw_GetRandomNumberSetPWD phalSli_Sw_GetRandomNumberSetPWD `(us  1 e 2 0 ]
+"796
+[v _phalSli_Sw_Int_SetOptionBit phalSli_Sw_Int_SetOptionBit `(us  1 e 2 0 ]
+"78 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phbalReg/src/phbalReg.c
+[v _phbalReg_GetPortList phbalReg_GetPortList `(us  1 e 2 0 ]
+"209
+[v _phbalReg_SetPort phbalReg_SetPort `(us  1 e 2 0 ]
+"319
+[v _phbalReg_OpenPort phbalReg_OpenPort `(us  1 e 2 0 ]
+"423
+[v _phbalReg_ClosePort phbalReg_ClosePort `(us  1 e 2 0 ]
+"529
+[v _phbalReg_Exchange phbalReg_Exchange `(us  1 e 2 0 ]
+"660
+[v _phbalReg_SetConfig phbalReg_SetConfig `(us  1 e 2 0 ]
+"772
+[v _phbalReg_GetConfig phbalReg_GetConfig `(us  1 e 2 0 ]
+"87 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/phhalHw.c
+[v _phhalHw_Nfc_IC_Init phhalHw_Nfc_IC_Init `(us  1 e 2 0 ]
+"383
+[v _phhalHw_Exchange phhalHw_Exchange `(us  1 e 2 0 ]
+"521
+[v _phhalHw_ApplyProtocolSettings phhalHw_ApplyProtocolSettings `(us  1 e 2 0 ]
+"642
+[v _phhalHw_SetConfig phhalHw_SetConfig `(us  1 e 2 0 ]
+"766
+[v _phhalHw_MfcAuthenticateKeyNo phhalHw_MfcAuthenticateKeyNo `(us  1 e 2 0 ]
+"966
+[v _phhalHw_MfcAuthenticate phhalHw_MfcAuthenticate `(us  1 e 2 0 ]
+"1155
+[v _phhalHw_GetConfig phhalHw_GetConfig `(us  1 e 2 0 ]
+"1279
+[v _phhalHw_FieldOn phhalHw_FieldOn `(us  1 e 2 0 ]
+"1396
+[v _phhalHw_FieldOff phhalHw_FieldOff `(us  1 e 2 0 ]
+"1513
+[v _phhalHw_FieldReset phhalHw_FieldReset `(us  1 e 2 0 ]
+"1629
+[v _phhalHw_Wait phhalHw_Wait `(us  1 e 2 0 ]
+"1753
+[v _phhalHw_Transmit phhalHw_Transmit `(us  1 e 2 0 ]
+"1818
+[v _phhalHw_Receive phhalHw_Receive `(us  1 e 2 0 ]
+"1890
+[v _phhalHw_Autocoll phhalHw_Autocoll `(us  1 e 2 0 ]
+"1957
+[v _phhalHw_Lpcd phhalHw_Lpcd `(us  1 e 2 0 ]
+"2007
+[v _phhalHw_AsyncAbort phhalHw_AsyncAbort `(us  1 e 2 0 ]
+"2058
+[v _phhalHw_I18000p3m3Inventory phhalHw_I18000p3m3Inventory `(us  1 e 2 0 ]
+"2126
+[v _phhalHw_I18000p3m3ResumeInventory phhalHw_I18000p3m3ResumeInventory `(us  1 e 2 0 ]
+"2173
+[v _phhalHw_DeInit phhalHw_DeInit `(us  1 e 2 0 ]
+"189 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663.c
+[v _phhalHw_Rc663_Init phhalHw_Rc663_Init `(us  1 e 2 0 ]
+"267
+[v _phhalHw_Rc663_Exchange phhalHw_Rc663_Exchange `(us  1 e 2 0 ]
+"1021
+[v _phhalHw_Rc663_Transmit phhalHw_Rc663_Transmit `(us  1 e 2 0 ]
+"1316
+[v _phhalHw_Rc663_Receive phhalHw_Rc663_Receive `(us  1 e 2 0 ]
+"1678
+[v _phhalHw_Rc663_ApplyProtocolSettings phhalHw_Rc663_ApplyProtocolSettings `(us  1 e 2 0 ]
+"1982
+[v _phhalHw_Rc663_SetConfig phhalHw_Rc663_SetConfig `(us  1 e 2 0 ]
+"2978
+[v _phhalHw_Rc663_GetConfig phhalHw_Rc663_GetConfig `(us  1 e 2 0 ]
+"3291
+[v _phhalHw_Rc663_FieldOn phhalHw_Rc663_FieldOn `(us  1 e 2 0 ]
+"3310
+[v _phhalHw_Rc663_FieldOff phhalHw_Rc663_FieldOff `(us  1 e 2 0 ]
+"3329
+[v _phhalHw_Rc663_FieldReset phhalHw_Rc663_FieldReset `(us  1 e 2 0 ]
+"3356
+[v _phhalHw_Rc663_Wait phhalHw_Rc663_Wait `(us  1 e 2 0 ]
+"3432
+[v _phhalHw_Rc663_MfcAuthenticateKeyNo phhalHw_Rc663_MfcAuthenticateKeyNo `(us  1 e 2 0 ]
+"3489
+[v _phhalHw_Rc663_MfcAuthenticate phhalHw_Rc663_MfcAuthenticate `(us  1 e 2 0 ]
+"3514
+[v _phhalHw_Rc663_SetMinFDT phhalHw_Rc663_SetMinFDT `(us  1 e 2 0 ]
+"3565
+[v _phhalHw_Rc663_AsyncAbort phhalHw_Rc663_AsyncAbort `(us  1 e 2 0 ]
+"3580
+[v _phhalHw_Rc663_I18000p3m3Inventory phhalHw_Rc663_I18000p3m3Inventory `(us  1 e 2 0 ]
+"3883
+[v _phhalHw_Rc663_I18000p3m3ResumeInventory phhalHw_Rc663_I18000p3m3ResumeInventory `(us  1 e 2 0 ]
+"3999
+[v _phhalHw_Rc663_DeInit phhalHw_Rc663_DeInit `(us  1 e 2 0 ]
+"37 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663_Cmd.c
+[v _phhalHw_Rc663_Cmd_Lpcd phhalHw_Rc663_Cmd_Lpcd `(us  1 e 2 0 ]
+"256
+[v _phhalHw_Rc663_Cmd_Lpcd_GetConfig phhalHw_Rc663_Cmd_Lpcd_GetConfig `(us  1 e 2 0 ]
+"331
+[v _phhalHw_Rc663_Cmd_LoadKey phhalHw_Rc663_Cmd_LoadKey `(us  1 e 2 0 ]
+"357
+[v _phhalHw_Rc663_Cmd_WriteE2 phhalHw_Rc663_Cmd_WriteE2 `(us  1 e 2 0 ]
+"396
+[v _phhalHw_Rc663_Cmd_WriteE2Page phhalHw_Rc663_Cmd_WriteE2Page `(us  1 e 2 0 ]
+"440
+[v _phhalHw_Rc663_Cmd_ReadE2 phhalHw_Rc663_Cmd_ReadE2 `(us  1 e 2 0 ]
+"511
+[v _phhalHw_Rc663_Cmd_LoadReg phhalHw_Rc663_Cmd_LoadReg `(us  1 e 2 0 ]
+"564
+[v _phhalHw_Rc663_Cmd_LoadProtocol phhalHw_Rc663_Cmd_LoadProtocol `(us  1 e 2 0 ]
+"618
+[v _phhalHw_Rc663_Cmd_LoadKeyE2 phhalHw_Rc663_Cmd_LoadKeyE2 `(us  1 e 2 0 ]
+"648
+[v _phhalHw_Rc663_Cmd_StoreKeyE2 phhalHw_Rc663_Cmd_StoreKeyE2 `(us  1 e 2 0 ]
+"718
+[v _phhalHw_Rc663_Cmd_SoftReset phhalHw_Rc663_Cmd_SoftReset `(us  1 e 2 0 ]
+"726
+[v _phhalHw_Rc663_Cmd_AckReq phhalHw_Rc663_Cmd_AckReq `(us  1 e 2 0 ]
+"817
+[v _phhalHw_Rc663_Cmd_Lpcd_SetConfig phhalHw_Rc663_Cmd_Lpcd_SetConfig `(us  1 e 2 0 ]
+"844
+[v _phhalHw_Rc663_WriteRegister phhalHw_Rc663_WriteRegister `(us  1 e 2 0 ]
+"925
+[v _phhalHw_Rc663_ReadRegister phhalHw_Rc663_ReadRegister `(us  1 e 2 0 ]
+"465 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663_Int.c
+[v _phhalHw_Rc663_WriteFifo phhalHw_Rc663_WriteFifo `(us  1 e 2 0 ]
+"532
+[v _phhalHw_Rc663_ReadFifo phhalHw_Rc663_ReadFifo `(us  1 e 2 0 ]
+"590
+[v _phhalHw_Rc663_FlushFifo phhalHw_Rc663_FlushFifo `(us  1 e 2 0 ]
+"609
+[v _phhalHw_Rc663_WriteData phhalHw_Rc663_WriteData `(us  1 e 2 0 ]
+"691
+[v _phhalHw_Rc663_ReadData phhalHw_Rc663_ReadData `(us  1 e 2 0 ]
+"774
+[v _phhalHw_Rc663_SetCardMode phhalHw_Rc663_SetCardMode `(us  1 e 2 0 ]
+"1161
+[v _phhalHw_Rc663_SetConfig_Int phhalHw_Rc663_SetConfig_Int `(us  1 e 2 0 ]
+"1328
+[v _phhalHw_Rc663_SetRxWait phhalHw_Rc663_SetRxWait `(us  1 e 2 0 ]
+"1389
+[v _phhalHw_Rc663_SetTxWait phhalHw_Rc663_SetTxWait `(us  1 e 2 0 ]
+"1472
+[v _phhalHw_Rc663_SetFdt phhalHw_Rc663_SetFdt `(us  1 e 2 0 ]
+"1546
+[v _phhalHw_Rc663_GetFdt phhalHw_Rc663_GetFdt `(us  1 e 2 0 ]
+"1622
+[v _phhalHw_Rc663_GetTxBuffer phhalHw_Rc663_GetTxBuffer `(us  1 e 2 0 ]
+"1659
+[v _phhalHw_Rc663_GetRxBuffer phhalHw_Rc663_GetRxBuffer `(us  1 e 2 0 ]
+"1719
+[v _phhalHw_Rc663_GetDigiDelay phhalHw_Rc663_GetDigiDelay `(us  1 e 2 0 ]
+"1809
+[v _phhalHw_Rc663_MfcAuthenticate_Int phhalHw_Rc663_MfcAuthenticate_Int `(us  1 e 2 0 ]
+"1869
+[v _phhalHw_Rc663_Command_Int phhalHw_Rc663_Command_Int `(us  1 e 2 0 ]
+"2167
+[v _phhalHw_Rc663_EPCV2_Init phhalHw_Rc663_EPCV2_Init `(us  1 e 2 0 ]
+"2269
+[v _phhalHw_Rc663_GetErrorStatus phhalHw_Rc663_GetErrorStatus `(us  1 e 2 0 ]
+"2387
+[v _phhalHw_Rc663_GetMultiReg phhalHw_Rc663_GetMultiReg `(us  1 e 2 0 ]
+"2413
+[v _phhalHw_Rc663_ReStartRx phhalHw_Rc663_ReStartRx `(us  1 e 2 0 ]
+"2433
+[v _phhalHw_Rc663_CheckForEmdError phhalHw_Rc663_CheckForEmdError `(us  1 e 2 0 ]
+"2549
+[v _phhalHw_Rc663_CreateRespFrame phhalHw_Rc663_CreateRespFrame `(v  1 e 0 0 ]
+"2589
+[v _phhalHw_Rc663_FrameRxMultiplePkt phhalHw_Rc663_FrameRxMultiplePkt `(us  1 e 2 0 ]
+"2692
+[v _phhalHw_Rc663_18000p3m3_Sw_Exchange phhalHw_Rc663_18000p3m3_Sw_Exchange `(us  1 e 2 0 ]
+"2758
+[v _phhalHw_Rc663_18000p3m3_Sw_Select phhalHw_Rc663_18000p3m3_Sw_Select `(us  1 e 2 0 ]
+"2830
+[v _phhalHw_Rc663_18000p3m3_Sw_BeginRound phhalHw_Rc663_18000p3m3_Sw_BeginRound `(us  1 e 2 0 ]
+"2923
+[v _phhalHw_Rc663_18000p3m3_Sw_NextSlot phhalHw_Rc663_18000p3m3_Sw_NextSlot `(us  1 e 2 0 ]
+"2988
+[v _phhalHw_Rc663_18000p3m3_Sw_Ack phhalHw_Rc663_18000p3m3_Sw_Ack `(us  1 e 2 0 ]
+"3069
+[v _phhalHw_Rc663_18000p3m3_Sw_ReqRn phhalHw_Rc663_18000p3m3_Sw_ReqRn `(us  1 e 2 0 ]
+"37 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663_Wait.c
+[v _phhalHw_Rc663_WaitIrq phhalHw_Rc663_WaitIrq `(us  1 e 2 0 ]
+"51 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phOsal/src/Nortos/phOsal_Nortos.c
+[v _phOsal_Event_Init phOsal_Event_Init `(us  1 e 2 0 ]
+"59
+[v _phOsal_Event_GetEventHandle phOsal_Event_GetEventHandle `(us  1 e 2 0 ]
+"68
+[v _phOsal_Event_Post phOsal_Event_Post `(us  1 e 2 0 ]
+"89
+[v _phOsal_Event_PostwithDetail phOsal_Event_PostwithDetail `(v  1 e 0 0 ]
+"101
+[v _phOsal_Event_Consume phOsal_Event_Consume `(us  1 e 2 0 ]
+"115
+[v _phOsal_Event_WaitAny phOsal_Event_WaitAny `(us  1 e 2 0 ]
+"140
+[v _phOsal_Event_WaitAll phOsal_Event_WaitAll `(us  1 e 2 0 ]
+"160
+[v _phOsal_Event_SetDetail phOsal_Event_SetDetail `(v  1 e 0 0 ]
+"166
+[v _phOsal_Event_GetDetail phOsal_Event_GetDetail `(v  1 e 0 0 ]
+"171
+[v _phOsal_Event_Deinit phOsal_Event_Deinit `(us  1 e 2 0 ]
+"180
+[v _phOsal_Semaphore_Create phOsal_Semaphore_Create `(*.2v  1 e 2 0 ]
+"188
+[v _phOsal_Semaphore_Give phOsal_Semaphore_Give `(us  1 e 2 0 ]
+"194
+[v _phOsal_Semaphore_Take phOsal_Semaphore_Take `(us  1 e 2 0 ]
+"201
+[v _phOsal_Semaphore_Delete phOsal_Semaphore_Delete `(us  1 e 2 0 ]
+"206
+[v _phOsal_Mutex_Create phOsal_Mutex_Create `(*.2v  1 e 2 0 ]
+"212
+[v _phOsal_Mutex_Take phOsal_Mutex_Take `(us  1 e 2 0 ]
+"219
+[v _phOsal_Mutex_Give phOsal_Mutex_Give `(us  1 e 2 0 ]
+"224
+[v _phOsal_Mutex_Delete phOsal_Mutex_Delete `(us  1 e 2 0 ]
+"229
+[v _phOsal_Timer_Create phOsal_Timer_Create `(*.2v  1 e 2 0 ]
+"237
+[v _phOsal_Timer_Start phOsal_Timer_Start `(us  1 e 2 0 ]
+"244
+[v _phOsal_Timer_Stop phOsal_Timer_Stop `(us  1 e 2 0 ]
+"249
+[v _phOsal_Timer_Reset phOsal_Timer_Reset `(us  1 e 2 0 ]
+"254
+[v _phOsal_Timer_Delete phOsal_Timer_Delete `(us  1 e 2 0 ]
+"42 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phpalI18000p3m3/src/phpalI18000p3m3.c
+[v _phpalI18000p3m3_Exchange phpalI18000p3m3_Exchange `(us  1 e 2 0 ]
+"140
+[v _phpalI18000p3m3_Select phpalI18000p3m3_Select `(us  1 e 2 0 ]
+"246
+[v _phpalI18000p3m3_BeginRound phpalI18000p3m3_BeginRound `(us  1 e 2 0 ]
+"347
+[v _phpalI18000p3m3_ResizeRound phpalI18000p3m3_ResizeRound `(us  1 e 2 0 ]
+"416
+[v _phpalI18000p3m3_NextSlot phpalI18000p3m3_NextSlot `(us  1 e 2 0 ]
+"482
+[v _phpalI18000p3m3_GetSerialNo phpalI18000p3m3_GetSerialNo `(us  1 e 2 0 ]
+"559
+[v _phpalI18000p3m3_CreateSelectCmd phpalI18000p3m3_CreateSelectCmd `(us  1 e 2 0 ]
+"657
+[v _phpalI18000p3m3_CreateBeginRoundCmd phpalI18000p3m3_CreateBeginRoundCmd `(us  1 e 2 0 ]
+"743
+[v _phpalI18000p3m3_Ack phpalI18000p3m3_Ack `(us  1 e 2 0 ]
+"841
+[v _phpalI18000p3m3_Nak phpalI18000p3m3_Nak `(us  1 e 2 0 ]
+"894
+[v _phpalI18000p3m3_ActivateCard phpalI18000p3m3_ActivateCard `(us  1 e 2 0 ]
+"963
+[v _phpalI18000p3m3_SetConfig phpalI18000p3m3_SetConfig `(us  1 e 2 0 ]
+"37 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phpalI18000p3m3/src/Sw/phpalI18000p3m3_Sw.c
+[v _phpalI18000p3m3_Sw_Init phpalI18000p3m3_Sw_Init `(us  1 e 2 0 ]
+"58
+[v _phpalI18000p3m3_Sw_Exchange phpalI18000p3m3_Sw_Exchange `(us  1 e 2 0 ]
+"125
+[v _phpalI18000p3m3_Sw_Select phpalI18000p3m3_Sw_Select `(us  1 e 2 0 ]
+"272
+[v _phpalI18000p3m3_Sw_BeginRound phpalI18000p3m3_Sw_BeginRound `(us  1 e 2 0 ]
+"401
+[v _phpalI18000p3m3_Sw_ResizeRound phpalI18000p3m3_Sw_ResizeRound `(us  1 e 2 0 ]
+"488
+[v _phpalI18000p3m3_Sw_NextSlot phpalI18000p3m3_Sw_NextSlot `(us  1 e 2 0 ]
+"562
+[v _phpalI18000p3m3_Sw_GetSerialNo phpalI18000p3m3_Sw_GetSerialNo `(us  1 e 2 0 ]
+"582
+[v _phpalI18000p3m3_Sw_CreateSelectCmd phpalI18000p3m3_Sw_CreateSelectCmd `(us  1 e 2 0 ]
+"672
+[v _phpalI18000p3m3_Sw_CreateBeginRoundCmd phpalI18000p3m3_Sw_CreateBeginRoundCmd `(us  1 e 2 0 ]
+"711
+[v _phpalI18000p3m3_Sw_Ack phpalI18000p3m3_Sw_Ack `(us  1 e 2 0 ]
+"819
+[v _phpalI18000p3m3_Sw_Nak phpalI18000p3m3_Sw_Nak `(us  1 e 2 0 ]
+"884
+[v _phpalI18000p3m3_Sw_ActivateCard phpalI18000p3m3_Sw_ActivateCard `(us  1 e 2 0 ]
+"1132
+[v _phpalI18000p3m3_Sw_SetConfig phpalI18000p3m3_Sw_SetConfig `(us  1 e 2 0 ]
+"41 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phpalSli15693/src/phpalSli15693.c
+[v _phpalSli15693_Inventory phpalSli15693_Inventory `(us  1 e 2 0 ]
+"140
+[v _phpalSli15693_SendEof phpalSli15693_SendEof `(us  1 e 2 0 ]
+"236
+[v _phpalSli15693_StayQuiet phpalSli15693_StayQuiet `(us  1 e 2 0 ]
+"289
+[v _phpalSli15693_Select phpalSli15693_Select `(us  1 e 2 0 ]
+"342
+[v _phpalSli15693_ResetToReady phpalSli15693_ResetToReady `(us  1 e 2 0 ]
+"394
+[v _phpalSli15693_Exchange phpalSli15693_Exchange `(us  1 e 2 0 ]
+"465
+[v _phpalSli15693_ActivateCard phpalSli15693_ActivateCard `(us  1 e 2 0 ]
+"575
+[v _phpalSli15693_GetSerialNo phpalSli15693_GetSerialNo `(us  1 e 2 0 ]
+"638
+[v _phpalSli15693_SetSerialNo phpalSli15693_SetSerialNo `(us  1 e 2 0 ]
+"690
+[v _phpalSli15693_SetConfig phpalSli15693_SetConfig `(us  1 e 2 0 ]
+"749
+[v _phpalSli15693_GetConfig phpalSli15693_GetConfig `(us  1 e 2 0 ]
+"813
+[v _phpalSli15693_InventoryRead phpalSli15693_InventoryRead `(us  1 e 2 0 ]
+"910
+[v _phpalSli15693_FastInventoryRead phpalSli15693_FastInventoryRead `(us  1 e 2 0 ]
+"1007
+[v _phpalSli15693_InventoryPageRead phpalSli15693_InventoryPageRead `(us  1 e 2 0 ]
+"1126
+[v _phpalSli15693_FastInventoryPageRead phpalSli15693_FastInventoryPageRead `(us  1 e 2 0 ]
+"1223
+[v _phpalSli15693_StayQuietPersistent phpalSli15693_StayQuietPersistent `(us  1 e 2 0 ]
+"35 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phpalSli15693/src/Sw/phpalSli15693_Sw.c
+[v _phpalSli15693_Sw_Init phpalSli15693_Sw_Init `(us  1 e 2 0 ]
+"60
+[v _phpalSli15693_Sw_Inventory phpalSli15693_Sw_Inventory `(us  1 e 2 0 ]
+"97
+[v _phpalSli15693_Sw_SendEof phpalSli15693_Sw_SendEof `(us  1 e 2 0 ]
+"300
+[v _phpalSli15693_Sw_StayQuiet phpalSli15693_Sw_StayQuiet `(us  1 e 2 0 ]
+"344
+[v _phpalSli15693_Sw_Select phpalSli15693_Sw_Select `(us  1 e 2 0 ]
+"392
+[v _phpalSli15693_Sw_ResetToReady phpalSli15693_Sw_ResetToReady `(us  1 e 2 0 ]
+"431
+[v _phpalSli15693_Sw_Exchange phpalSli15693_Sw_Exchange `(us  1 e 2 0 ]
+"561
+[v _phpalSli15693_Sw_ActivateCard phpalSli15693_Sw_ActivateCard `(us  1 e 2 0 ]
+"756
+[v _phpalSli15693_Sw_GetSerialNo phpalSli15693_Sw_GetSerialNo `(us  1 e 2 0 ]
+"776
+[v _phpalSli15693_Sw_SetSerialNo phpalSli15693_Sw_SetSerialNo `(us  1 e 2 0 ]
+"795
+[v _phpalSli15693_Sw_SetConfig phpalSli15693_Sw_SetConfig `(us  1 e 2 0 ]
+"919
+[v _phpalSli15693_Sw_GetConfig phpalSli15693_Sw_GetConfig `(us  1 e 2 0 ]
+"964
+[v _phpalSli15693_Sw_InventoryRead phpalSli15693_Sw_InventoryRead `(us  1 e 2 0 ]
+"993
+[v _phpalSli15693_Sw_FastInventoryRead phpalSli15693_Sw_FastInventoryRead `(us  1 e 2 0 ]
+"1022
+[v _phpalSli15693_Sw_InventoryPageRead phpalSli15693_Sw_InventoryPageRead `(us  1 e 2 0 ]
+"1051
+[v _phpalSli15693_Sw_FastInventoryPageRead phpalSli15693_Sw_FastInventoryPageRead `(us  1 e 2 0 ]
+"1080
+[v _phpalSli15693_Sw_StayQuietPersistent phpalSli15693_Sw_StayQuietPersistent `(us  1 e 2 0 ]
+"1124
+[v _phpalSli15693_Sw_InventoryEx phpalSli15693_Sw_InventoryEx `(us  1 e 2 0 ]
+"46 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phTools/src/phTools.c
+[v _phTools_EncodeParity phTools_EncodeParity `(us  1 e 2 0 ]
+"152
+[v _phTools_DecodeParity phTools_DecodeParity `(us  1 e 2 0 ]
+"275
+[v _phTools_CalculateCrc5 phTools_CalculateCrc5 `(us  1 e 2 0 ]
+"379
+[v _phTools_CalculateCrc8 phTools_CalculateCrc8 `(us  1 e 2 0 ]
+"468
+[v _phTools_CalculateCrc16 phTools_CalculateCrc16 `(us  1 e 2 0 ]
+"557
+[v _phTools_CalculateCrc32 phTools_CalculateCrc32 `(us  1 e 2 0 ]
+"646
+[v _phTools_CalcParity phTools_CalcParity `(uc  1 s 1 phTools_CalcParity ]
+"673
+[v _phTools_UpdateCrc_B phTools_UpdateCrc_B `(v  1 s 0 phTools_UpdateCrc_B ]
+"680
+[v _phTools_ComputeCrc_B phTools_ComputeCrc_B `(us  1 e 2 0 ]
+"706
+[v _phTools_GetVersion phTools_GetVersion `(us  1 e 2 0 ]
+"102 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/phhwConfig.c
+[v _Set_Interface_Link Set_Interface_Link `(v  1 e 0 0 ]
+"187
+[v _Check_Pn512IRQ_LPC1769 Check_Pn512IRQ_LPC1769 `(v  1 e 0 0 ]
+"240
+[v _Reset_reader_device Reset_reader_device `(v  1 e 0 0 ]
+"303
+[v _GPIO_Init GPIO_Init `(v  1 e 0 0 ]
+"320
+[v _Set_Port Set_Port `(v  1 e 0 0 ]
+"334
+[v _LedOn LedOn `(v  1 e 0 0 ]
+"345
+[v _LedOff LedOff `(v  1 e 0 0 ]
+"405
+[v _Set_Interrupt Set_Interrupt `(v  1 e 0 0 ]
+"463
+[v _PN512_IRQHandler PN512_IRQHandler `(v  1 e 0 0 ]
+"64 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_common.c
+[v _Read_String Read_String `(us  1 e 2 0 ]
+"74 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_ilt_commands.c
+[v _SimpleInventory_18000p3m3 SimpleInventory_18000p3m3 `(us  1 e 2 0 ]
+"129
+[v _Inventory_18000p3m3 Inventory_18000p3m3 `(us  1 e 2 0 ]
+"284
+[v _Read_18000p3m3 Read_18000p3m3 `(us  1 e 2 0 ]
+"407
+[v _Write_18000p3m3 Write_18000p3m3 `(us  1 e 2 0 ]
+"553
+[v _Write_Password_18000p3m3 Write_Password_18000p3m3 `(us  1 e 2 0 ]
+"678
+[v _Lock_18000p3m3 Lock_18000p3m3 `(us  1 e 2 0 ]
+"85 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_ilt_ui.c
+[v _ISO18000p3m3_Init ISO18000p3m3_Init `(us  1 e 2 0 ]
+"116
+[v _MainMenu_ILT MainMenu_ILT `(us  1 e 2 0 ]
+"150
+[v _CommandsMenu_ILT CommandsMenu_ILT `(us  1 e 2 0 ]
+"257
+[v _InventoryPopulation_ILT InventoryPopulation_ILT `(us  1 e 2 0 ]
+"284
+[v _NumberInventoriedTags_ILT NumberInventoriedTags_ILT `(us  1 e 2 0 ]
+"319
+[v _ChooseTag ChooseTag `(us  1 e 2 0 ]
+"436
+[v _ListTags_ILT ListTags_ILT `(us  1 e 2 0 ]
+"493
+[v _Read_ILT Read_ILT `(us  1 e 2 0 ]
+"541
+[v _Write_ILT Write_ILT `(us  1 e 2 0 ]
+"608
+[v _Access_ILT Access_ILT `(us  1 e 2 0 ]
+"758
+[v _SetAccess_ILT SetAccess_ILT `(us  1 e 2 0 ]
+"833
+[v _Lock_ILT Lock_ILT `(us  1 e 2 0 ]
+"917
+[v _List_Detection_18000p3m3 List_Detection_18000p3m3 `(us  1 e 2 0 ]
+"948
+[v _SimpleInventory_ILT SimpleInventory_ILT `(us  1 e 2 0 ]
+"971
+[v _SetConfig_18000p3m3 SetConfig_18000p3m3 `(us  1 e 2 0 ]
+"1152
+[v _Default_SetConfig_18000p3m3 Default_SetConfig_18000p3m3 `(us  1 e 2 0 ]
+"1201
+[v _ErrorStatusHandler ErrorStatusHandler `(v  1 s 0 ErrorStatusHandler ]
+"70 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_sli_commands.c
+[v _InventoryPopullation_15693 InventoryPopullation_15693 `(us  1 e 2 0 ]
+"97
+[v _InventoryPopullation_15693_Int InventoryPopullation_15693_Int `(us  1 s 2 InventoryPopullation_15693_Int ]
+"194
+[v _FastInventoryPopullation_15693 FastInventoryPopullation_15693 `(us  1 e 2 0 ]
+"221
+[v _FastInventoryPopullation_15693_Int FastInventoryPopullation_15693_Int `(us  1 s 2 FastInventoryPopullation_15693_Int ]
+"336
+[v _ReadSingleBlock_15693 ReadSingleBlock_15693 `(us  1 e 2 0 ]
+"372
+[v _WriteSingleBlock_15693 WriteSingleBlock_15693 `(us  1 e 2 0 ]
+"411
+[v _ReadMultipleBlocks_15693 ReadMultipleBlocks_15693 `(us  1 e 2 0 ]
+"444
+[v _ResetToReady_15693 ResetToReady_15693 `(us  1 e 2 0 ]
+"480
+[v _setTimeoutFlag setTimeoutFlag `(v  1 s 0 setTimeoutFlag ]
+"494
+[v _ResetToReadyAllTagsLoop_15693 ResetToReadyAllTagsLoop_15693 `(us  1 e 2 0 ]
+"548
+[v _StayQuiet_15693 StayQuiet_15693 `(us  1 e 2 0 ]
+"573
+[v _testSliType testSliType `(E19414  1 s 1 testSliType ]
+"605
+[v _GetNXPSystemInformation_Slix2 GetNXPSystemInformation_Slix2 `(us  1 e 2 0 ]
+"640
+[v _GetRandomNumberSetPWD_Slix2 GetRandomNumberSetPWD_Slix2 `(us  1 e 2 0 ]
+"683
+[v _WritePassword_Slix2 WritePassword_Slix2 `(us  1 e 2 0 ]
+"719
+[v _LockPassword_Slix2 LockPassword_Slix2 `(us  1 e 2 0 ]
+"750
+[v _ProtectPage_Slix2 ProtectPage_Slix2 `(us  1 e 2 0 ]
+"791
+[v _StayQuietPersistent_Slix2 StayQuietPersistent_Slix2 `(us  1 e 2 0 ]
+"90 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_sli_ui.c
+[v _ISO15693_Init ISO15693_Init `(us  1 e 2 0 ]
+"136
+[v _MainMenu_SLI MainMenu_SLI `(us  1 e 2 0 ]
+"209
+[v _CommandsMenu_SLIX CommandsMenu_SLIX `(us  1 e 2 0 ]
+"321
+[v _InventoryPopulation_SLI InventoryPopulation_SLI `(us  1 e 2 0 ]
+"350
+[v _NumberInventoriedTags_SLI NumberInventoriedTags_SLI `(us  1 e 2 0 ]
+"388
+[v _ListTags_SLI ListTags_SLI `(us  1 e 2 0 ]
+"459
+[v _ChooseTag_SLI ChooseTag_SLI `(us  1 e 2 0 ]
+"563
+[v _ReadSingleBlock_SLI ReadSingleBlock_SLI `(us  1 e 2 0 ]
+"610
+[v _WriteSingleBlock_SLI WriteSingleBlock_SLI `(us  1 e 2 0 ]
+"682
+[v _ReadMultipleBlocks_SLI ReadMultipleBlocks_SLI `(us  1 e 2 0 ]
+"746
+[v _StayQuiet_SLI StayQuiet_SLI `(us  1 e 2 0 ]
+"771
+[v _ResetToReady_SLI ResetToReady_SLI `(us  1 e 2 0 ]
+"814
+[v _ResetToReadyAllTagsLoop_SLI ResetToReadyAllTagsLoop_SLI `(us  1 e 2 0 ]
+"869
+[v _CommandsMenu_SLIX2 CommandsMenu_SLIX2 `(us  1 e 2 0 ]
+"1038
+[v _FastInventoryPopulation_SLI FastInventoryPopulation_SLI `(us  1 e 2 0 ]
+"1066
+[v _GetNXPSystemInformation_SLI GetNXPSystemInformation_SLI `(us  1 e 2 0 ]
+"1186
+[v _SetPassword_SLI SetPassword_SLI `(us  1 e 2 0 ]
+"1263
+[v _WritePassword_SLI WritePassword_SLI `(us  1 e 2 0 ]
+"1321
+[v _LockPassword_SLI LockPassword_SLI `(us  1 e 2 0 ]
+"1362
+[v _ProtectPage_SLI ProtectPage_SLI `(us  1 e 2 0 ]
+"1435
+[v _StayQuietPersistent_SLI StayQuietPersistent_SLI `(us  1 e 2 0 ]
+"85 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/main.c
+[v _init_CLRC init_CLRC `(i  1 e 2 0 ]
+"59 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/Stub/phbalReg_Stub.c
+[v _phbalReg_Stub_Init phbalReg_Stub_Init `(us  1 e 2 0 ]
+"75
+[v _phbalReg_Stub_GetPortList phbalReg_Stub_GetPortList `(us  1 e 2 0 ]
+"85
+[v _phbalReg_Stub_SetPort phbalReg_Stub_SetPort `(us  1 e 2 0 ]
+"93
+[v _phbalReg_Stub_OpenPort phbalReg_Stub_OpenPort `(us  1 e 2 0 ]
+"192
+[v _phbalReg_Stub_ClosePort phbalReg_Stub_ClosePort `(us  1 e 2 0 ]
+"199
+[v _phbalReg_Stub_MultiRegWrite phbalReg_Stub_MultiRegWrite `(us  1 e 2 0 ]
+"240
+[v _phbalReg_Stub_MultiRegRead phbalReg_Stub_MultiRegRead `(us  1 e 2 0 ]
+"269
+[v _phbalReg_Stub_Exchange phbalReg_Stub_Exchange `(us  1 e 2 0 ]
+"359
+[v _phbalReg_Stub_SetConfig phbalReg_Stub_SetConfig `(us  1 e 2 0 ]
+"408
+[v _phbalReg_Stub_GetConfig phbalReg_Stub_GetConfig `(us  1 e 2 0 ]
+"37 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/Stub/phOsal_Lpc17xx_Int.c
+[v _TIMER0_IRQHandler TIMER0_IRQHandler `(v  1 e 0 0 ]
+"46
+[v _TIMER1_IRQHandler TIMER1_IRQHandler `(v  1 e 0 0 ]
+"54
+[v _TIMER2_IRQHandler TIMER2_IRQHandler `(v  1 e 0 0 ]
+"65
+[v _phOsal_Lpc17xx_Int_Timer_Init phOsal_Lpc17xx_Int_Timer_Init `(v  1 e 0 0 ]
+"86
+[v _phOsal_Lpc17xx_Int_Timer_Create phOsal_Lpc17xx_Int_Timer_Create `(v  1 e 0 0 ]
+"92
+[v _phOsal_Lpc17xx_Int_Timer_Register phOsal_Lpc17xx_Int_Timer_Register `(us  1 e 2 0 ]
+"104
+[v _phOsal_Lpc17xx_Int_Timer_GetElapsedDelay phOsal_Lpc17xx_Int_Timer_GetElapsedDelay `(us  1 e 2 0 ]
+"114
+[v _phOsal_Lpc17xx_Int_Timer_Stop phOsal_Lpc17xx_Int_Timer_Stop `(us  1 e 2 0 ]
+"120
+[v _phOsal_Lpc17xx_Int_Timer_Delete phOsal_Lpc17xx_Int_Timer_Delete `(us  1 e 2 0 ]
+"126
+[v _phOsal_Lpc17xx_Int_Delay32Ms phOsal_Lpc17xx_Int_Delay32Ms `(v  1 e 0 0 ]
+"133
+[v _phOsal_Lpc17xx_Int_Delay32Us phOsal_Lpc17xx_Int_Delay32Us `(v  1 e 0 0 ]
+"139
+[v _phOsal_Lpc17xx_Int_Enable_Timer32 phOsal_Lpc17xx_Int_Enable_Timer32 `(v  1 e 0 0 ]
+"145
+[v _phOsal_Lpc17xx_Int_Disable_Timer32 phOsal_Lpc17xx_Int_Disable_Timer32 `(v  1 e 0 0 ]
+"151
+[v _phOsal_Lpc17xx_Int_Reset_Timer32 phOsal_Lpc17xx_Int_Reset_Timer32 `(v  1 e 0 0 ]
+"157
+[v _phOsal_Lpc17xx_Int_Init_Timer32 phOsal_Lpc17xx_Int_Init_Timer32 `(v  1 e 0 0 ]
+"163
+[v _phOsal_Lpc17xx_Int_Load_TimerMs phOsal_Lpc17xx_Int_Load_TimerMs `(v  1 e 0 0 ]
+"169
+[v _phOsal_Lpc17xx_Int_Load_TimerUs phOsal_Lpc17xx_Int_Load_TimerUs `(v  1 e 0 0 ]
+"175
+[v _phOsal_Lpc17xx_Int_Get_TimerMs phOsal_Lpc17xx_Int_Get_TimerMs `(v  1 e 0 0 ]
+"181
+[v _phOsal_Lpc17xx_Int_Get_TimerUs phOsal_Lpc17xx_Int_Get_TimerUs `(v  1 e 0 0 ]
+"31 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/Stub/phPlatform.c
+[v _phPlatform_Init phPlatform_Init `(us  1 e 2 0 ]
+"37
+[v _phPlatform_Timer_Init phPlatform_Timer_Init `(us  1 e 2 0 ]
+"44
+[v _phPlatform_Timer_Create phPlatform_Timer_Create `(us  1 e 2 0 ]
+"61
+[v _phPlatform_Timer_Reset phPlatform_Timer_Reset `(us  1 e 2 0 ]
+"69
+[v _phPlatform_Timer_Wait phPlatform_Timer_Wait `(us  1 e 2 0 ]
+"101
+[v _phPlatform_Timer_Start phPlatform_Timer_Start `(us  1 e 2 0 ]
+"122
+[v _phPlatform_Timer_GetElapsedDelay phPlatform_Timer_GetElapsedDelay `(us  1 e 2 0 ]
+"141
+[v _phPlatform_Timer_Delete phPlatform_Timer_Delete `(us  1 e 2 0 ]
+"157
+[v _phPlatform_Timer_Stop phPlatform_Timer_Stop `(us  1 e 2 0 ]
+"174
+[v _phPlatform_Timer_ExecCallback phPlatform_Timer_ExecCallback `(us  1 e 2 0 ]
+"4 I:\IDE\Firmware\Microchip\xc8\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 I:\IDE\Firmware\Microchip\xc8\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"31 I:\IDE\Firmware\Microchip\xc8\sources\common\abtofl.c
+[v ___abtofl __abtofl `(d  1 e 3 0 ]
+"33 I:\IDE\Firmware\Microchip\xc8\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"36 I:\IDE\Firmware\Microchip\xc8\sources\common\altofl.c
+[v ___altofl __altofl `(d  1 e 3 0 ]
+"42 I:\IDE\Firmware\Microchip\xc8\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"5 I:\IDE\Firmware\Microchip\xc8\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"37 I:\IDE\Firmware\Microchip\xc8\sources\common\attofl.c
+[v ___attofl __attofl `(d  1 e 3 0 ]
+"37 I:\IDE\Firmware\Microchip\xc8\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"31 I:\IDE\Firmware\Microchip\xc8\sources\common\awtofl.c
+[v ___awtofl __awtofl `(d  1 e 3 0 ]
+"32 I:\IDE\Firmware\Microchip\xc8\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"458 I:\IDE\Firmware\Microchip\xc8\sources\common\doprnt.c
+[v __doprnt _doprnt `(i  1 e 2 0 ]
+"63 I:\IDE\Firmware\Microchip\xc8\sources\common\double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"88 I:\IDE\Firmware\Microchip\xc8\sources\common\fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"49 I:\IDE\Firmware\Microchip\xc8\sources\common\fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"4 I:\IDE\Firmware\Microchip\xc8\sources\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"62 I:\IDE\Firmware\Microchip\xc8\sources\common\flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 I:\IDE\Firmware\Microchip\xc8\sources\common\flneg.c
+[v ___flneg __flneg `(d  1 e 3 0 ]
+"62 I:\IDE\Firmware\Microchip\xc8\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"20 I:\IDE\Firmware\Microchip\xc8\sources\common\flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"43 I:\IDE\Firmware\Microchip\xc8\sources\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"254 I:\IDE\Firmware\Microchip\xc8\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"277
+[v _ldexp ldexp `(d  1 e 3 0 ]
+"86 I:\IDE\Firmware\Microchip\xc8\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"49 I:\IDE\Firmware\Microchip\xc8\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 I:\IDE\Firmware\Microchip\xc8\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 I:\IDE\Firmware\Microchip\xc8\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 I:\IDE\Firmware\Microchip\xc8\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 I:\IDE\Firmware\Microchip\xc8\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 I:\IDE\Firmware\Microchip\xc8\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\isalpha.c
+[v _isalpha isalpha `(b  1 e 0 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\isspace.c
+[v _isspace isspace `(b  1 e 0 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\isupper.c
+[v _isupper isupper `(b  1 e 0 0 ]
+"4 I:\IDE\Firmware\Microchip\xc8\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 I:\IDE\Firmware\Microchip\xc8\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 I:\IDE\Firmware\Microchip\xc8\sources\common\lbtofl.c
+[v ___lbtofl __lbtofl `(d  1 e 3 0 ]
+"27 I:\IDE\Firmware\Microchip\xc8\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"30 I:\IDE\Firmware\Microchip\xc8\sources\common\lltofl.c
+[v ___lltofl __lltofl `(d  1 e 3 0 ]
+"35 I:\IDE\Firmware\Microchip\xc8\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 I:\IDE\Firmware\Microchip\xc8\sources\common\lttofl.c
+[v ___lttofl __lttofl `(d  1 e 3 0 ]
+"30 I:\IDE\Firmware\Microchip\xc8\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 I:\IDE\Firmware\Microchip\xc8\sources\common\lwtofl.c
+[v ___lwtofl __lwtofl `(d  1 e 3 0 ]
+"28 I:\IDE\Firmware\Microchip\xc8\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"11 I:\IDE\Firmware\Microchip\xc8\sources\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+"13 I:\IDE\Firmware\Microchip\xc8\sources\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"7 I:\IDE\Firmware\Microchip\xc8\sources\common\putch.c
+[v _putch putch `(v  1 e 0 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\common\round.c
+[v _round round `(d  1 e 3 0 ]
+"13 I:\IDE\Firmware\Microchip\xc8\sources\common\sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"8 I:\IDE\Firmware\Microchip\xc8\sources\common\strncpy.c
+[v _strncpy strncpy `(*.39uc  1 e 2 0 ]
+"5 I:\IDE\Firmware\Microchip\xc8\sources\common\strtol.c
+[v _strtol strtol `(l  1 e 4 0 ]
+"5 I:\IDE\Firmware\Microchip\xc8\sources\common\toupper.c
+[v _toupper toupper `(uc  1 e 1 0 ]
+"13 I:\IDE\Firmware\Microchip\xc8\sources\common\trunc.c
+[v _trunc trunc `(d  1 e 3 0 ]
+"15 I:\IDE\Firmware\Microchip\xc8\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 I:\IDE\Firmware\Microchip\xc8\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 I:\IDE\Firmware\Microchip\xc8\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 I:\IDE\Firmware\Microchip\xc8\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asfladd.c
+[v ___asfladd __asfladd `(d  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asfldiv.c
+[v ___asfldiv __asfldiv `(d  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asflmul.c
+[v ___asflmul __asflmul `(d  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asflsub.c
+[v ___asflsub __asflsub `(d  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asftadd.c
+[v ___asftadd __asftadd `(f  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asftdiv.c
+[v ___asftdiv __asftdiv `(f  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asftmul.c
+[v ___asftmul __asftmul `(f  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\asftsub.c
+[v ___asftsub __asftsub `(f  1 e 3 0 ]
+"6 I:\IDE\Firmware\Microchip\xc8\sources\pic18\aslmul.c
+[v ___aslmul __aslmul `(ul  1 e 4 0 ]
+"51 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\main.c
+[v _main main `(v  1 e 0 0 ]
+"51 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 0 0 ]
+"66
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+"111 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+"122
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
+"49 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
+"63 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/spi.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 0 0 ]
+"77
+[v _SPI_Exchange8bit SPI_Exchange8bit `(uc  1 e 1 0 ]
+"91
+[v _SPI_Exchange8bitBuffer SPI_Exchange8bitBuffer `(uc  1 e 1 0 ]
+"130
+[v _SPI_IsBufferFull SPI_IsBufferFull `(uc  1 e 1 0 ]
+"135
+[v _SPI_HasWriteCollisionOccured SPI_HasWriteCollisionOccured `(uc  1 e 1 0 ]
+"140
+[v _SPI_ClearWriteCollisionStatus SPI_ClearWriteCollisionStatus `(v  1 e 0 0 ]
+"63 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 0 0 ]
+"92
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 0 0 ]
+"98
+[v _TMR0_StopTimer TMR0_StopTimer `(v  1 e 0 0 ]
+"104
+[v _TMR0_ReadTimer TMR0_ReadTimer `(ui  1 e 2 0 ]
+"117
+[v _TMR0_WriteTimer TMR0_WriteTimer `(v  1 e 0 0 ]
+"124
+[v _TMR0_Reload TMR0_Reload `(v  1 e 0 0 ]
+"131
+[v _TMR0_ISR TMR0_ISR `(v  1 e 0 0 ]
+"151
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 0 0 ]
+"155
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 0 0 ]
+"62 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 0 0 ]
+"94
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 0 0 ]
+"100
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 0 0 ]
+"106
+[v _TMR1_ReadTimer TMR1_ReadTimer `(ui  1 e 2 0 ]
+"115
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 0 0 ]
+"137
+[v _TMR1_Reload TMR1_Reload `(v  1 e 0 0 ]
+"144
+[v _TMR1_StartSinglePulseAcquisition TMR1_StartSinglePulseAcquisition `(v  1 e 0 0 ]
+"149
+[v _TMR1_CheckGateValueStatus TMR1_CheckGateValueStatus `(uc  1 e 1 0 ]
+"154
+[v _TMR1_ISR TMR1_ISR `(v  1 e 0 0 ]
+"170
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 0 0 ]
+"174
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 0 0 ]
+"45 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663.c
+[v _wRc663_DefaultShadow_I14443a wRc663_DefaultShadow_I14443a `C[10][2]us  1 s 40 wRc663_DefaultShadow_I14443a ]
+"60
+[v _wRc663_Emvco_I14443a_DefaultShadow wRc663_Emvco_I14443a_DefaultShadow `C[10][2]us  1 s 40 wRc663_Emvco_I14443a_DefaultShadow ]
+"76
+[v _wRc663_DefaultShadow_I14443b wRc663_DefaultShadow_I14443b `C[11][2]us  1 s 44 wRc663_DefaultShadow_I14443b ]
+"92
+[v _wRc663_Emvco_I14443b_DefaultShadow wRc663_Emvco_I14443b_DefaultShadow `C[11][2]us  1 s 44 wRc663_Emvco_I14443b_DefaultShadow ]
+"108
+[v _wRc663_DefaultShadow_Felica wRc663_DefaultShadow_Felica `C[11][2]us  1 s 44 wRc663_DefaultShadow_Felica ]
+"124
+[v _wRc663_DefaultShadow_Felica_424 wRc663_DefaultShadow_Felica_424 `C[11][2]us  1 s 44 wRc663_DefaultShadow_Felica_424 ]
+"140
+[v _wRc663_DefaultShadow_I15693 wRc663_DefaultShadow_I15693 `C[12][2]us  1 s 48 wRc663_DefaultShadow_I15693 ]
+"157
+[v _wRc663_DefaultShadow_EpcUid wRc663_DefaultShadow_EpcUid `C[11][2]us  1 s 44 wRc663_DefaultShadow_EpcUid ]
+"173
+[v _wRc663_DefaultShadow_I18000p3m3 wRc663_DefaultShadow_I18000p3m3 `C[12][2]us  1 s 48 wRc663_DefaultShadow_I18000p3m3 ]
+"35 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phhalHw/src/Rc663/phhalHw_Rc663_Int.c
+[v _gkphhalHw_Rc663_Registers gkphhalHw_Rc663_Registers `C[15]uc  1 s 15 gkphhalHw_Rc663_Registers ]
+"55
+[v _gkphhalHw_Rc663_I14443A_106 gkphhalHw_Rc663_I14443A_106 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443A_106 ]
+"75
+[v _gkphhalHw_Rc663_I14443A_212 gkphhalHw_Rc663_I14443A_212 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443A_212 ]
+"95
+[v _gkphhalHw_Rc663_I14443A_424 gkphhalHw_Rc663_I14443A_424 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443A_424 ]
+"115
+[v _gkphhalHw_Rc663_I14443A_848 gkphhalHw_Rc663_I14443A_848 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443A_848 ]
+"135
+[v _gkphhalHw_Rc663_I14443B_106 gkphhalHw_Rc663_I14443B_106 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443B_106 ]
+"155
+[v _gkphhalHw_Rc663_EMVCO_I14443B_106 gkphhalHw_Rc663_EMVCO_I14443B_106 `C[15]uc  1 s 15 gkphhalHw_Rc663_EMVCO_I14443B_106 ]
+"174
+[v _gkphhalHw_Rc663_I14443B_212 gkphhalHw_Rc663_I14443B_212 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443B_212 ]
+"194
+[v _gkphhalHw_Rc663_I14443B_424 gkphhalHw_Rc663_I14443B_424 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443B_424 ]
+"214
+[v _gkphhalHw_Rc663_I14443B_848 gkphhalHw_Rc663_I14443B_848 `C[15]uc  1 s 15 gkphhalHw_Rc663_I14443B_848 ]
+"234
+[v _gkphhalHw_Rc663_Felica_212 gkphhalHw_Rc663_Felica_212 `C[15]uc  1 s 15 gkphhalHw_Rc663_Felica_212 ]
+"254
+[v _gkphhalHw_Rc663_Felica_424 gkphhalHw_Rc663_Felica_424 `C[15]uc  1 s 15 gkphhalHw_Rc663_Felica_424 ]
+"274
+[v _gkphhalHw_Rc663_I15693_High gkphhalHw_Rc663_I15693_High `C[15]uc  1 s 15 gkphhalHw_Rc663_I15693_High ]
+"294
+[v _gkphhalHw_Rc663_I15693_Fast_High gkphhalHw_Rc663_I15693_Fast_High `C[15]uc  1 s 15 gkphhalHw_Rc663_I15693_Fast_High ]
+"314
+[v _gkphhalHw_Rc663_EpcUid gkphhalHw_Rc663_EpcUid `C[15]uc  1 s 15 gkphhalHw_Rc663_EpcUid ]
+"334
+[v _gkphhalHw_Rc663_I18000p3m3_DSM2 gkphhalHw_Rc663_I18000p3m3_DSM2 `C[15]uc  1 s 15 gkphhalHw_Rc663_I18000p3m3_DSM2 ]
+"354
+[v _gkphhalHw_Rc663_I18000p3m3_DSM4 gkphhalHw_Rc663_I18000p3m3_DSM4 `C[15]uc  1 s 15 gkphhalHw_Rc663_I18000p3m3_DSM4 ]
+"374
+[v _gkphhalHw_Rc663_I18000p3m3_QSM2 gkphhalHw_Rc663_I18000p3m3_QSM2 `C[15]uc  1 s 15 gkphhalHw_Rc663_I18000p3m3_QSM2 ]
+"394
+[v _gkphhalHw_Rc663_I18000p3m3_QSM4 gkphhalHw_Rc663_I18000p3m3_QSM4 `C[15]uc  1 s 15 gkphhalHw_Rc663_I18000p3m3_QSM4 ]
+"414
+[v _gkphhalHw_Rc663_DigiDelays_Us gkphhalHw_Rc663_DigiDelays_Us `C[7][4]us  1 s 56 gkphhalHw_Rc663_DigiDelays_Us ]
+"439
+[v _phhalHw_Rc663_GetReg phhalHw_Rc663_GetReg `[6]uc  1 s 6 phhalHw_Rc663_GetReg ]
+"450
+[v _phhalHw_Rc663_SetReg phhalHw_Rc663_SetReg `[8]uc  1 s 8 phhalHw_Rc663_SetReg ]
+"35 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/comps/phOsal/src/Nortos/phOsal_Nortos.c
+[v _gphOsal_EventISR gphOsal_EventISR `VEE232  1 s 2 gphOsal_EventISR ]
+"40
+[v _gphOsal_EvtLastSource gphOsal_EvtLastSource `VEE266  1 s 2 gphOsal_EvtLastSource ]
+"44
+[v _gphOsal_EvtLastDest gphOsal_EvtLastDest `VEE274  1 s 2 gphOsal_EvtLastDest ]
+"48
+[v _gphOsal_EvtDetail gphOsal_EvtDetail `VEE244  1 s 2 gphOsal_EvtDetail ]
+"35 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/icode_common.c
+[v _cTableLine cTableLine `C[29]uc  1 e 29 0 ]
+"36
+[v _cTableLine2 cTableLine2 `C[16]uc  1 e 16 0 ]
+"37
+[v _cTableReturnMain cTableReturnMain `C[24]uc  1 e 24 0 ]
+"38
+[v _cTableReturn cTableReturn `C[11]uc  1 e 11 0 ]
+"39
+[v _cHelloWord cHelloWord `C[12]uc  1 e 12 0 ]
+"40
+[v _cTryAgain cTryAgain `C[18]uc  1 e 18 0 ]
+"41
+[v _bAccessPassword1 bAccessPassword1 `Cui  1 e 2 0 ]
+"42
+[v _bAccessPassword2 bAccessPassword2 `Cui  1 e 2 0 ]
+"43
+[v _cHelloWord_Size cHelloWord_Size `Cui  1 e 2 0 ]
+"56 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/src/main.c
+[v _CRP_WORD CRP_WORD `Cui  1 e 2 0 ]
+[s S2322 . 93 `us 1 wId 2 0 `*.39v 1 pBalDataParams 2 2 `*.39uc 1 pLoadRegConfig 2 4 `*.39uc 1 pTxBuffer 2 6 `*.39uc 1 pRxBuffer 2 8 `ui 1 dwTimingUs 2 10 `[16]us 1 wCfgShadow 32 12 `us 1 wTxBufSize 2 44 `us 1 wTxBufLen 2 46 `us 1 wRxBufSize 2 48 `us 1 wRxBufLen 2 50 `us 1 wRxBufStartPos 2 52 `us 1 wMaxPrecachedBytes 2 54 `us 1 wTimingMode 2 56 `us 1 wFieldOffTime 2 58 `us 1 wFieldRecoveryTime 2 60 `us 1 wAdditionalInfo 2 62 `us 1 wPowerDownTimeMs 2 64 `us 1 wDetectionTimeUs 2 66 `us 1 dwFdtPc 2 68 `uc 1 bLoadRegMode 1 70 `uc 1 bCardType 1 71 `uc 1 bTimeoutUnit 1 72 `uc 1 bSymbolStart 1 73 `uc 1 bSymbolEnd 1 74 `uc 1 bFifoSize 1 75 `uc 1 bBalConnectionType 1 76 `uc 1 bRfResetAfterTo 1 77 `uc 1 bMode 1 78 `uc 1 bI 1 79 `uc 1 bQ 1 80 `uc 1 bJewelActivated 1 81 `uc 1 bCRC5Enabled 1 82 `uc 1 bOpeMode 1 83 `uc 1 bEmdNoiseMaxDataLen 1 84 `uc 1 bRxMultiple 1 85 `uc 1 bNfcipMode 1 86 `uc 1 bCheckEmdErr 1 87 `[2]uc 1 abStoredCRC 2 88 `us 1 wCurrentSlotCount 2 90 `uc 1 bSession 1 92 ]
+"63
+[v _sHalReader sHalReader `S2322  1 e 93 0 ]
+"64
+[v _bHalBufferTx bHalBufferTx `[256]uc  1 e 256 0 ]
+"65
+[v _bHalBufferRx bHalBufferRx `[256]uc  1 e 256 0 ]
+[s S2234 . 5 `us 1 wId 2 0 `us 1 wHalType 2 2 `uc 1 bMultiRegRW 1 4 ]
+"68
+[v _sBalReader sBalReader `S2234  1 e 5 0 ]
+[s S8376 Timer_Struct 8 `ui 1 dwTimerId 2 0 `uc 1 bTimerFree 1 2 `*.37(v 1 pApplicationCallback 2 3 `*.39v 1 pContext 3 5 ]
+"71
+[s S8385 . 26 `us 1 wId 2 0 `[3]S8376 1 gTimers 24 2 ]
+[v _sPlatform sPlatform `S8385  1 e 26 0 ]
+"74
+[v _bString bString `[1]uc  1 e 1 0 ]
+"32 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8/NXP/Stub/phOsal_Lpc17xx_Int.c
+[v _pTimerOsal pTimerOsal `*.39S8385  1 s 2 pTimerOsal ]
+"29280 I:\IDE\Firmware\Microchip\xc8\include\pic18lf46k80.h
+[v _WPUB WPUB `VEuc  1 e 1 @3931 ]
+"33228
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"33355
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"33487
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"33619
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"33751
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"33957
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"34013
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"34074
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"34135
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"34196
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"34270
+[v _REFOCON REFOCON `VEuc  1 e 1 @3994 ]
+"34334
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S230 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR1GIF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"34490
+[s S239 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+"34490
+[u S243 . 1 `S230 1 . 1 0 `S239 1 . 1 0 ]
+"34490
+"34490
+[v _PIE1bits PIE1bits `VES243  1 e 1 @3997 ]
+"34566
+"34566
+[v _PIR1bits PIR1bits `VES243  1 e 1 @3998 ]
+"34642
+"34642
+[v _IPR1bits IPR1bits `VES243  1 e 1 @3999 ]
+"35483
+[v _T1GCON T1GCON `VEuc  1 e 1 @4010 ]
+[s S354 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_T1DONE 1 0 :1:3 
+]
+"35517
+[s S357 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nT1DONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+"35517
+[s S365 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+]
+"35517
+[s S370 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+"35517
+[s S373 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 nT1DONE 1 0 :1:3 
+]
+"35517
+[u S376 . 1 `S354 1 . 1 0 `S357 1 . 1 0 `S365 1 . 1 0 `S370 1 . 1 0 `S373 1 . 1 0 ]
+"35517
+"35517
+[v _T1GCONbits T1GCONbits `VES376  1 e 1 @4010 ]
+"38106
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S24 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"38126
+[s S30 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+"38126
+[u S35 . 1 `S24 1 . 1 0 `S30 1 . 1 0 ]
+"38126
+"38126
+[v _SSPCON1bits SSPCON1bits `VES35  1 e 1 @4038 ]
+"38175
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S51 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"38263
+[s S54 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+"38263
+[s S57 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"38263
+[s S66 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+"38263
+[s S71 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+"38263
+[s S76 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+"38263
+[s S79 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+"38263
+[s S82 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+"38263
+[s S87 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+"38263
+[s S92 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+"38263
+[s S98 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+"38263
+[s S101 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+"38263
+[s S104 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+"38263
+[s S107 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+"38263
+[s S110 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+"38263
+[s S113 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+"38263
+[u S116 . 1 `S51 1 . 1 0 `S54 1 . 1 0 `S57 1 . 1 0 `S66 1 . 1 0 `S71 1 . 1 0 `S76 1 . 1 0 `S79 1 . 1 0 `S82 1 . 1 0 `S87 1 . 1 0 `S92 1 . 1 0 `S98 1 . 1 0 `S101 1 . 1 0 `S104 1 . 1 0 `S107 1 . 1 0 `S110 1 . 1 0 `S113 1 . 1 0 ]
+"38263
+"38263
+[v _SSPSTATbits SSPSTATbits `VES116  1 e 1 @4039 ]
+"38417
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"38486
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"38719
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S303 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"38753
+[s S306 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"38753
+[s S313 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"38753
+[s S319 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+]
+"38753
+[s S322 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 T1RD16 1 0 :1:7 
+]
+"38753
+[u S325 . 1 `S303 1 . 1 0 `S306 1 . 1 0 `S313 1 . 1 0 `S319 1 . 1 0 `S322 1 . 1 0 ]
+"38753
+"38753
+[v _T1CONbits T1CONbits `VES325  1 e 1 @4045 ]
+"38828
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"38847
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+"39077
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+"39148
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"39224
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S553 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"39244
+[s S560 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+"39244
+[u S564 . 1 `S553 1 . 1 0 `S560 1 . 1 0 ]
+"39244
+"39244
+[v _T0CONbits T0CONbits `VES564  1 e 1 @4053 ]
+"39299
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"39318
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S651 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"40009
+[s S654 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 INT3IP 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 INTEDG3 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"40009
+[s S663 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT3P 1 0 :1:1 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+"40009
+[u S669 . 1 `S651 1 . 1 0 `S654 1 . 1 0 `S663 1 . 1 0 ]
+"40009
+"40009
+[v _INTCON2bits INTCON2bits `VES669  1 e 1 @4081 ]
+[s S463 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"40125
+[s S472 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"40125
+[s S481 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"40125
+"40125
+"40125
+[u S498 . 1 `S463 1 . 1 0 `S472 1 . 1 0 `S481 1 . 1 0 `S472 1 . 1 0 `S481 1 . 1 0 ]
+"40125
+"40125
+[v _INTCONbits INTCONbits `VES498  1 e 1 @4082 ]
+"42996
+[v _IPEN IPEN `VEb  1 e 0 @32391 ]
+"354 I:\IDE\Firmware\Microchip\xc8\sources\common\doprnt.c
+[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+"362
+[v _hexpowers hexpowers `C[4]ui  1 s 8 hexpowers ]
+"369
+[v _octpowers octpowers `C[6]ui  1 s 12 octpowers ]
+"3 I:\IDE\Firmware\Microchip\xc8\sources\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"56 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEui  1 e 2 0 ]
+"326 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr0.h
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"56 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEui  1 e 2 0 ]
+"403 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr1.h
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"51 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"88
+} 0
+"111 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+{
+"120
+} 0
+"62 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 0 0 ]
+{
+"92
+} 0
+"94
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 0 0 ]
+{
+"98
+} 0
+"170
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 0 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.2v  1 p 2 0 ]
+"172
+} 0
+"63 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 0 0 ]
+{
+"90
+} 0
+"92
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 0 0 ]
+{
+"96
+} 0
+"151
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 0 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.2v  1 p 2 0 ]
+"153
+} 0
+"63 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/spi.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 0 0 ]
+{
+"75
+} 0
+"49 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
+{
+"67
+} 0
+"122 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
+{
+"134
+} 0
+"51 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 0 0 ]
+{
+"64
+} 0
+"66
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+{
+"81
+} 0
+"154 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 0 0 ]
+{
+"167
+} 0
+"174
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 0 0 ]
+{
+"177
+} 0
+"131 C:\Users\rzazo_000\Documents\BEL-ICODE\BEL8\BelIcodeClrc663.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 0 0 ]
+{
+"148
+} 0
+"155
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 0 0 ]
+{
+"158
+} 0

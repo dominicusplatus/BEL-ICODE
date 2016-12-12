@@ -240,7 +240,8 @@ phStatus_t phTools_DecodeParity(
         if ((wByteIndexIn + 1) < wInBufferLength)
         {
             /* Append remaining bits to output */
-            pOutBuffer[wByteIndexOut] |= (uint8_t)(pInBuffer[wByteIndexIn + 1] << (1 + bBitPosition));
+              //TODO !
+               //                 pOutBuffer[wByteIndexOut] |= (uint8_t)(pInBuffer[wByteIndexIn + 1] << (1 + bBitPosition));
 
             /* Perform parity checking if this isn't an incomplete byte */
             if ((*pOutBufferBits == 0) || ((wByteIndexOut + 1) < *pOutBufferLength))
@@ -264,7 +265,8 @@ phStatus_t phTools_DecodeParity(
     /* Mask out invalid bits of last byte */
     if (*pOutBufferBits > 0)
     {
-        pOutBuffer[*pOutBufferLength - 1] &= (uint8_t)(0xFF >> (8 - *pOutBufferBits));
+        //TODO !
+      //  pOutBuffer[*pOutBufferLength - 1] &= (uint8_t)(0xFF >> (8 - *pOutBufferBits));
     }
 
     return PH_ADD_COMPCODE(PH_ERR_SUCCESS, PH_COMP_TOOLS);

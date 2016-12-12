@@ -22,6 +22,9 @@
 #ifndef ICODE_COMMON_H
 #define ICODE_COMMON_H
 
+#include "xc.h"
+#include "math.h"
+
 /*----------------------------------------------------------------------------------------------
  * Includes
 ----------------------------------------------------------------------------------------------*/
@@ -45,10 +48,10 @@
 #endif
 
 /* size of buffer used for buffering before printout to speed up printout */
-#define SPRINTF_LONG_BUFFER_SIZE					2048
-#define SPRINTF_SHORT_BUFFER_SIZE					50
+#define SPRINTF_LONG_BUFFER_SIZE					1
+#define SPRINTF_SHORT_BUFFER_SIZE					1
 /* maximal number of lines - detected tags printout in one bulk. not recommended to change */
-#define MAX_NUMBER_OF_LINES_OF_LIST_PER_PRINTOUT    25
+#define MAX_NUMBER_OF_LINES_OF_LIST_PER_PRINTOUT    1
 
 /*----------------------------------------------------------------------------------------------
  * Global variables
@@ -66,7 +69,8 @@ extern const uint32_t cHelloWord_Size;
  * Global function prototypes
 ----------------------------------------------------------------------------------------------*/
 extern phStatus_t Read_String(uint8_t * pBuffer, uint32_t dwLentgh);
-extern uint16_t round(float number);
+
+//extern uint16_t round(float number);
 
 #endif // ICODE_COMMON_H
 /*----------------------------------------------------------------------------------------------

@@ -65,7 +65,7 @@
 #define  LENGTH_WORD                            16
 #define  WORD_PTR_LEN                           4
 
-#define  MAX_NUM_DETECTED_ITL_TAGS              80
+#define  MAX_NUM_DETECTED_ITL_TAGS              1
 
 
 #define  I18000P3M3_MEM_STARTING_ADDRESS        0
