@@ -1,0 +1,71 @@
+CLL	    // Clear History
+
+//> JPS JUMP/LOOP Sample:
+//> ----------------
+
+//> Sample loops, nested (8*7*6 turns):
+MOV ML0 8
+::: OUTER_LOOP
+    DEC ML0
+    //# ML0
+
+    MOV ML1 7
+    ::: MID_LOOP
+        DEC ML1
+
+        MOV ML2 6
+        ::: INNER_LOOP
+            DEC ML2
+        JNE ML2 0 INNER_LOOP
+    JNE ML1 0 MID_LOOP
+JNE ML0 0 OUTER_LOOP
+
+
+//> Write a byte into the FIFO,
+//> read it back and increment result:
+SR 09 AB
+// Error in accessing chip ?
+JNE IOE 0 FWD
+GR 09
+// Value is now in IOR (I/O Result):
+INC IOR
+//> Content of IOR (Must be 0xAC):
+//# IOR
+
+// Move I/O Result to Memory Location 0:
+MOV ML0 IOR
+
+//> Write 4 bytes (ascending) into the FIFO (start val in ML0):
+MOV ML1 4
+::: FIFO_WR
+    DEC ML1
+    SR 09 ML0
+    INC ML0
+JNE ML1 0 FIFO_WR
+
+//> FIFO Level (ends up in IOR):
+GR 0A
+
+// Read out FIFO only in case of correct I/O:
+JNE IOE 0 FWD
+
+//> Check FIFO (read out only if it has content):
+MOV ML1 IOR
+
+// Has FIFO Content?
+JNE ML1 0 FIFO_RD
+//> Error: FIFO Level == 0 !
+JMP FWD
+::: FIFO_RD
+    GR 09
+    DEC ML1
+JNE ML1 0 FIFO_RD
+
+// Forward Jump:
+JMP FWD
+//> This message is not displayed (jumps over it):
+::: FWD
+
+//> END.
+
+//> _

@@ -1,0 +1,37 @@
+[general]
+ReleaseType = SOURCE
+CIName = Osal
+CIDescription = NXP Reader Library
+ReleaseNo = 1.0
+Infixes = NONE
+
+# Dependencies = 
+
+# Items only relevant for Components
+RunTimeDiversity = NO
+
+# uncomment following items if platform specific LIBs
+# CPUClass = 
+# ToolChains = 
+# CPUType = 
+# OSClass = 
+# Endianness = 
+
+SrcLanguage = C
+Exclude =
+MoReUseRelease = 3.2
+ASCIIFormat = DOS
+ContactPerson = Martin Kaufmann
+EmailAddress = martin.kaufmann@nxp.com
+
+[Interface]
+Interfaces = phOsal
+InterfaceSuites = 
+InterfacePath = ..\..\intfs
+
+[results]
+OnScreen = SUMMARY
+
+[checks]
+#Level = BL3, QL4
+#Conceptgroups =

@@ -1,0 +1,247 @@
+CLL
+//> Desfire Reader:
+//> ---------------
+
+// reset chip
+SR 01 0F    // Softreset
+
+//> IC Configuration:
+//> -----------------
+SR 14 83    // TxControlReg - InvTx2On=1, Tx2RFEn, Tx1RFEn
+SR 15 40    // TxAutoReg - Force100ASK
+SR 18 55    // RxThresholdReg - MinLevel, CollLevel
+SR 19 4D    // DemodReg
+SR 23 6F    // GsNLoadMod
+SR 24 26    // Modwidth
+SR 25 8F    // TxBitPhase
+SR 26 59    // RFCfgReg - RxGain
+SR 27 F4    // GsNReg - CWGsN, ModGsN
+SR 28 3F    // CWGsP
+SR 29 11    // ModGsP
+
+
+
+//> Start Transceive:
+//> -----------------
+SR 01 0c    // CommandReg - transceive
+
+//> Mifare Request:
+//> ---------------
+SR 0a 80    // flush FIFO
+SR 09 26    // FIFO - Request code
+RE 0a 01    // Read FIFOLevel
+
+SR 0d 87    // BitframingReg - StartSend, TxLastBits
+
+SLP 1
+
+//> Response ATQ:
+//> -------------
+GR 06       // Read ErrReg
+RE 0a 02    // Read FIFOLevel
+GR 09       // ATQ LSB
+GR 09       // ATQ MSB
+
+//> Mifare Anticoll CL1:
+//> --------------------
+SR 0a 80    // flush FIFO
+SR 09 93    // fast activation of Mifare 
+SR 09 20    // NVB byte (nothing known)
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+
+SLP 1
+
+//>         Response SNR:
+GR 06       // Read ErrReg
+RE 0a 05    // Read FIFOLevel
+GR 09       // Read SNR 0
+MOV ML0 IOR // copy byte 0 to merker
+GR 09       // Read SNR 1
+MOV ML1 IOR // copy byte 1 to merker
+GR 09       // Read SNR 2
+MOV ML2 IOR // copy byte 2 to merker
+GR 09       // Read SNR 3
+MOV ML3 IOR // copy byte 3 to merker
+GR 09       // Read SNR 4 (check byte)
+MOV ML4 IOR // copy byte 4 to merker
+
+
+
+//> Mifare Select CL1:
+//> ------------------
+SR 0a 80    // flush FIFO
+SR 09 93    // fast activation of Mifare 
+SR 09 70    // NVB byte
+SR 12 80    // TxMode: activate CRC
+SR 13 80    // RxMode: activate CRC
+SR 09 ML0   // Write SNR 0
+SR 09 ML1   // Write SNR 1
+SR 09 ML2   // Write SNR 2
+SR 09 ML3   // Write SNR 3
+SR 09 ML4   // Write SNR 4 (check byte)
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+
+SLP 1
+
+//>         Response SAK:
+GR 06       // Read ErrReg
+RE 0a 01    // Read FIFOLevel
+GR 09       // ATQ LSB
+
+
+
+//> Mifare Anticoll CL2:
+//> --------------------
+SR 0a 80    // flush FIFO
+SR 12 00    // TxMode: deactivate CRC
+SR 13 00    // RxMode: deactivate CRC
+SR 09 95    // activation of Mifare CL2
+SR 09 20    // NVB byte (nothing known)
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+
+SLP 1
+
+//>         Response SNR:
+GR 06       // Read ErrReg
+RE 0a 05    // Read FIFOLevel
+GR 09       // Read SNR 0
+MOV ML0 IOR // copy byte 0 to merker
+GR 09       // Read SNR 1
+MOV ML1 IOR // copy byte 1 to merker
+GR 09       // Read SNR 2
+MOV ML2 IOR // copy byte 2 to merker
+GR 09       // Read SNR 3
+MOV ML3 IOR // copy byte 3 to merker
+GR 09       // Read SNR 4 (check byte)
+MOV ML4 IOR // copy byte 4 to merker
+
+
+
+//> Mifare Select CL2:
+//> ------------------
+SR 0a 80    // flush FIFO
+SR 09 95    // activation of Mifare CL2
+SR 09 70    // NVB byte
+SR 12 80    // TxMode: activate CRC
+SR 13 80    // RxMode: activate CRC
+SR 09 ML0   // Write SNR 0
+SR 09 ML1   // Write SNR 1
+SR 09 ML2   // Write SNR 2
+SR 09 ML3   // Write SNR 3
+SR 09 ML4   // Write SNR 4 (check byte)
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+SLP 10
+
+//>         Response SAK:
+GR 06       // Read ErrReg
+RE 0a 01    // Read FIFOLevel
+GR 09       // ATQ LSB
+
+
+
+
+//> RATS:
+//> -----
+SR 0a 80    // flush FIFO
+SR 09 E0    // Start-byte
+SR 09 50    // Parameter (FSDI=5, CID=0)
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+SLP 10
+
+//>         Response ATS:
+GR 06       // Read ErrReg
+GR 0a       // Read FIFOLevel
+
+// read received ATS
+MOV ML0 IOR     // copy length to merker
+::: COPYLOOP    // set marker for copy loop
+GR 09           // read out data
+DEC ML0         // decrement copy counter
+JNE ML0 00 COPYLOOP     // check if 0 and jump if not
+
+
+
+
+//> PPS:
+//> ----
+SR 0a 80    // flush FIFO
+SR 09 D0    // Start-byte
+SR 09 11    // Parameter0 
+SR 09 05    // Parameter1 (0000 DSI DRI)
+// DSI/DRI coding:  00: 106kbps, 01: 212kbps, 10:424kbps, 11:848kbps
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+SLP 10
+
+
+//>         Response PPS:
+GR 06       // Read ErrReg
+RE 0a 01    // Read FIFOLevel
+GR 09       // Start-byte
+
+// reconfigure HW
+SR 12 90    // TxMode: CRC=1; 212kbps
+SR 13 90    // RxMode: CRC=1; 212kbps
+SR 18 75    // RxTreshold
+SR 24 15    // Modwidth: Values for HigherDatarates: 26:106kbps; 15:212kbps; 8:424kbps; 1:848kbps
+
+
+
+
+//> Desfire Command "Select Application" (Application with ID 1 must be available!!):
+//> ---------------------------------------------------------------------------------
+SR 0a 80    // flush FIFO
+SR 09 02    // T=CL byte
+SR 09 5A    // Command byte
+SR 09 01    // Application ID0
+SR 09 00    // Application ID1
+SR 09 00    // Application ID2
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+SLP 100
+
+
+//>         Response to SelectApp:
+GR 06       // Read ErrReg
+RE 0a 02    // Read FIFOLevel
+GR 09       // Read 1st response byte
+RE 09 00    // Read & Check 2nd response byte
+
+
+
+
+//> Desfire Command "Read Data" (File with ID 0 must be available!):
+//> ----------------------------------------------------------------
+SR 0a 80    // flush FIFO
+SR 09 03    // T=CL byte
+SR 09 BD    // Command byte
+SR 09 00    // File No.
+SR 09 00    // File Offset0
+SR 09 00    // File Offset1
+SR 09 00    // File Offset2
+SR 09 10    // Lenght to be read 0
+SR 09 00    // Lenght to be read 1
+SR 09 00    // Lenght to be read 2
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+SLP 100
+
+
+//>         Response to SelectApp:
+GR 06       // Read ErrReg
+RE 0a 12    // Read FIFOLevel (18 bytes)
+
+// read received data
+MOV ML0 12      // set length to merker (checked in the command above)
+::: COPYLOOP1   // set marker for copy loop
+GR 09           // read out data
+DEC ML0         // decrement copy counter
+JNE ML0 00 COPYLOOP1    // check if 0 and jump if not
+
+
+

@@ -1,0 +1,151 @@
+CLL
+//> Mifare Reader:
+//> --------------
+
+// reset chip
+SR 01 0F    // Softreset
+
+//> IC Configuration:
+//> -----------------
+SR 14 83    // TxControlReg - InvTx2On=1, Tx2RFEn, Tx1RFEn
+SR 15 40    // TxAutoReg - Force100ASK
+SR 18 55    // RxThresholdReg - MinLevel, CollLevel
+SR 19 4D    // DemodReg
+SR 23 6F    // GsNLoadMod
+SR 24 26    // Modwidth
+SR 25 8F    // TxBitPhase
+SR 26 59    // RFCfgReg - RxGain
+SR 27 F4    // GsNReg - CWGsN, ModGsN
+SR 28 3F    // CWGsP
+SR 29 11    // ModGsP
+
+//> Start Transceive:
+//> -----------------
+SR 01 0c    // CommandReg - transceive
+
+//> Mifare Request:
+//> ---------------
+SR 0a 80    // flush FIFO
+SR 09 26    // FIFO - Request code
+RE 0a 01    // Read FIFOLevel
+
+SR 0d 87    // BitframingReg - StartSend, TxLastBits
+
+SLP 10
+
+//> Response ATQ:
+//> -------------
+GR 06       // Read ErrReg
+RE 0a 02    // Read FIFOLevel
+GR 09       // ATQ LSB
+GR 09       // ATQ MSB
+
+//> Mifare Anticoll:
+//> ----------------
+SR 0a 80    // flush FIFO
+SR 09 93    // fast activation of Mifare 
+SR 09 20    // NVB byte (nothing known)
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+
+SLP 10
+
+//>         Response SNR:
+GR 06       // Read ErrReg
+RE 0a 05    // Read FIFOLevel
+GR 09       // Read SNR 0
+MOV ML0 IOR // copy byte 0 to merker
+GR 09       // Read SNR 1
+MOV ML1 IOR // copy byte 1 to merker
+GR 09       // Read SNR 2
+MOV ML2 IOR // copy byte 2 to merker
+GR 09       // Read SNR 3
+MOV ML3 IOR // copy byte 3 to merker
+GR 09       // Read SNR 4 (check byte)
+MOV ML4 IOR // copy byte 4 to merker
+
+
+
+//> Mifare Select:
+//> --------------
+SR 0a 80    // flush FIFO
+SR 09 93    // fast activation of Mifare 
+SR 09 70    // NVB byte
+SR 12 80    // TxMode: activate CRC
+SR 13 80    // RxMode: activate CRC
+SR 09 ML0   // Write SNR 0
+SR 09 ML1   // Write SNR 1
+SR 09 ML2   // Write SNR 2
+SR 09 ML3   // Write SNR 3
+SR 09 ML4   // Write SNR 4 (check byte)
+
+SR 0d 80    // BitframingReg - StartSend, TxLastBits
+SLP 10
+
+//>         Response SAK:
+GR 06       // Read ErrReg
+RE 0a 01    // Read FIFOLevel
+GR 09       // ATQ LSB
+
+
+//> Authenticate:
+//> -------------
+
+SR 0a 80    // flush FIFO
+SR 09 60    // Auth. Command
+SR 09 02    // Block Number
+SR 09 FF    // Key 0
+SR 09 FF    // Key 1
+SR 09 FF    // Key 2
+SR 09 FF    // Key 3
+SR 09 FF    // Key 4
+SR 09 FF    // Key 5
+SR 09 ML0   // Write SNR 0
+SR 09 ML1   // Write SNR 1
+SR 09 ML2   // Write SNR 2
+SR 09 ML3   // Write SNR 3
+
+SR 01 0E    // Authenticate command
+
+SLP 10
+
+//> check Crypto1On
+RF 08 08 08 // Read Status2 register (bit Authenticated == 1)
+RE 01 00    // Read Command register
+RE 06 00    // Error register
+
+
+//> Mifare Read Block 2:
+//> --------------------
+SR 04 7f
+SR 01 0C    // activate transceive
+SR 0A 80    // FIFOLevel: Flush Buffer
+SR 09 30    // Reader command
+SR 09 02    // Block number
+
+SR 0D 80    // BitframingReg - StartSend, TxLastBits
+SLP 30
+
+
+//>         Response Read data:
+RE 06 00    // Error register
+RE 0A 10    // FiFoLevel is 16
+GR 09       // Read data  0
+GR 09       // Read data  1
+GR 09       // Read data  2
+GR 09       // Read data  3
+GR 09       // Read data  4
+GR 09       // Read data  5
+GR 09       // Read data  6
+GR 09       // Read data  7
+GR 09       // Read data  8
+GR 09       // Read data  9
+GR 09       // Read data 10
+GR 09       // Read data 11
+GR 09       // Read data 12
+GR 09       // Read data 13
+GR 09       // Read data 14
+GR 09       // Read data 15
+
+
+
