@@ -104,7 +104,7 @@ phStatus_t Read_String(uint8_t * pBuffer, uint32_t dwLentgh)
  *
  ---------------------------------------------------------------------------------------------*/
 
-/*
+
 uint16_t round(float number)
 {
 	uint16_t result;
@@ -116,7 +116,7 @@ uint16_t round(float number)
 
 	return result;
 }
- * */
+
 
 /* ---------------------------------------------------------------------------------------------
  *   End of File

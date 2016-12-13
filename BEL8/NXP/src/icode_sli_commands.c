@@ -97,6 +97,7 @@ phStatus_t InventoryPopullation_15693(parameters_sli_t *pDataParams)
 static phStatus_t InventoryPopullation_15693_Int(parameters_sli_t *pDataParams, uint8_t *aMaskBuffer, uint8_t bMaskBitLength)
     {
     phStatus_t	status;
+            
     uint16_t    wCollisionLogReg = 0;
     uint8_t 	i;
 
@@ -170,7 +171,8 @@ static phStatus_t InventoryPopullation_15693_Int(parameters_sli_t *pDataParams, 
                     aMaskBuffer[bMaskBitLength / 8] |= i << 4;
                     }
 
-                status = InventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
+                //TODO ? REDO NON RECURSIVE
+              //  status = InventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
 
                 if(status == PH_ERR_INVALID_PARAMETER)
                     break;
@@ -202,6 +204,7 @@ phStatus_t FastInventoryPopullation_15693(parameters_sli_t *pDataParams)
     /* clear the addressed mode to be able perform inventory with all tags in the field */
     pDataParams->pPal->bFlags &= (~PHPAL_SLI15693_FLAG_ADDRESSED);
 
+    //TODO - NON RECURSIVE
     status = FastInventoryPopullation_15693_Int(pDataParams, aMaskBuffer, 0);
 
     return status;
@@ -218,6 +221,7 @@ phStatus_t FastInventoryPopullation_15693(parameters_sli_t *pDataParams)
  *              limit value MAX_NUM_DETECTED_SLI_TAGS.
  *
  ---------------------------------------------------------------------------------------------*/
+
 static phStatus_t FastInventoryPopullation_15693_Int(parameters_sli_t *pDataParams, uint8_t *aMaskBuffer, uint8_t bMaskBitLength)
     {
     phStatus_t	status;
@@ -314,7 +318,8 @@ static phStatus_t FastInventoryPopullation_15693_Int(parameters_sli_t *pDataPara
                     aMaskBuffer[bMaskBitLength / 8] |= i << 4;
                     }
 
-                status = FastInventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
+                //TODO - NON RECURSIVE
+              //  status = FastInventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
 
                 if(status == PH_ERR_INVALID_PARAMETER)
                     break;

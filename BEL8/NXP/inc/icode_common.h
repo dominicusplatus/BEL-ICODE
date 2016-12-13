@@ -70,7 +70,7 @@ extern const uint32_t cHelloWord_Size;
 ----------------------------------------------------------------------------------------------*/
 extern phStatus_t Read_String(uint8_t * pBuffer, uint32_t dwLentgh);
 
-//extern uint16_t round(float number);
+extern uint16_t round(float number);
 
 #endif // ICODE_COMMON_H
 /*----------------------------------------------------------------------------------------------

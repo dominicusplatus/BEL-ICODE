@@ -90,8 +90,6 @@ int init_CLRC (void)
     uint8_t       bStayInMenu = 1;
     void          *pHal;
 
-    printf("   ---  ICODE Demo Project  ---\n\n");
-
     /* Set the interface link for the internal chip communication */
     Set_Interface_Link();
 
@@ -162,30 +160,25 @@ int init_CLRC (void)
 
     while ((status == PH_ERR_SUCCESS) && (bStayInMenu))
         {
-        printf("\nMain MENU\n"
-                "%s\n"
-                "1 - ILT tags handling\n"
-                "2 - SLI tags handling\n"
-                "e - Exit\n",cTableLine);
 
-        Read_String (bString,1);
-        switch(bString[0])
-            {
-            case '1':
-                status = MainMenu_ILT(pHal);
-                CHECK_STATUS(status);
-                break;
-            case '2':
-                status = MainMenu_SLI(pHal, &sPlatform);
-                CHECK_STATUS(status);
-                break;
-            case 'e':
-                bStayInMenu = 0;
-                break;
-            default:
-                printf("Try again\n");
-                break;
-            }
+            Read_String (bString,1);
+            switch(bString[0])
+                {
+                case '1':
+                    status = MainMenu_ILT(pHal);
+                    CHECK_STATUS(status);
+                    break;
+                case '2':
+                    status = MainMenu_SLI(pHal, &sPlatform);
+                    CHECK_STATUS(status);
+                    break;
+                case 'e':
+                    bStayInMenu = 0;
+                    break;
+                default:
+                    printf("Try again\n");
+                    break;
+                }
 
         /* wait some time (100 milisecond)*/
         status = phPlatform_Timer_Wait(&sPlatform, PH_PLATFORM_TIMER_UNIT_MS, 100);

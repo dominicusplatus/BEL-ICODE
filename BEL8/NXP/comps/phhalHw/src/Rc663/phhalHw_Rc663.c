@@ -1011,7 +1011,7 @@ phStatus_t phhalHw_Rc663_Exchange(
         if (pDataParams->wAdditionalInfo > 0)
         {
             //TODO !
-          //  (*ppRxBuffer)[*pRxLength - 1] &= (uint8_t)(0xFF << (8 - pDataParams->wAdditionalInfo));
+            (*ppRxBuffer)[*pRxLength - 1] &= (uint8_t)(0xFF << (8 - pDataParams->wAdditionalInfo));
         }
     }
 
@@ -2212,6 +2212,7 @@ phStatus_t phhalHw_Rc663_SetConfig(
                     (wConfigShadow != PHHAL_HW_CONFIG_RXDATARATE_FRAMING) &&
                     (wConfigShadow != PHHAL_HW_CONFIG_TIMEOUT_VALUE_MS))
                 {
+                    //TODO ? RECURSIVE
                     PH_CHECK_SUCCESS_FCT(statusTmp, phhalHw_SetConfig(pDataParams, wConfigShadow, pShadowDefault[(wIndex << 1) + 1]));
                 }
             }
@@ -2344,6 +2345,7 @@ phStatus_t phhalHw_Rc663_SetConfig(
                     (wConfigShadow != PHHAL_HW_CONFIG_RXDATARATE_FRAMING) &&
                     (wConfigShadow != PHHAL_HW_CONFIG_TIMEOUT_VALUE_MS))
                 {
+                     //TODO ? RECURSIVE
                     PH_CHECK_SUCCESS_FCT(statusTmp, phhalHw_SetConfig(pDataParams, wConfigShadow, pShadowDefault[(wIndex << 1) + 1]));
                 }
             }

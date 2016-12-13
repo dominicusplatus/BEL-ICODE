@@ -425,7 +425,7 @@ void Set_Interrupt(void)
 #endif
 #if defined NXPBUILD__PHHAL_HW_RC663
     /* Enable IRQ Interrupts */
-    __enable_irq();
+//    __enable_irq();
 
     /* Enable External Interrupt */
  //   NVIC_EnableIRQ(EINT3_IRQn);

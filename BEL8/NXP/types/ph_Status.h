@@ -26,6 +26,10 @@
 #ifndef PH_STATUS_H
 #define PH_STATUS_H
 
+
+#include "xc.h"
+#include "math.h"
+
 #ifndef NXPBUILD_DELETE
 #include <ph_NxpBuild.h>
 #endif /* NXPBUILD_DELETE */
