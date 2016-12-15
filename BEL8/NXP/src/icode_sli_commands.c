@@ -172,7 +172,7 @@ static phStatus_t InventoryPopullation_15693_Int(parameters_sli_t *pDataParams, 
                     }
 
                 //TODO ? REDO NON RECURSIVE
-              //  status = InventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
+                status = InventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
 
                 if(status == PH_ERR_INVALID_PARAMETER)
                     break;
@@ -319,7 +319,7 @@ static phStatus_t FastInventoryPopullation_15693_Int(parameters_sli_t *pDataPara
                     }
 
                 //TODO - NON RECURSIVE
-              //  status = FastInventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
+                status = FastInventoryPopullation_15693_Int(pDataParams, aMaskBuffer, bMaskBitLength + 4);
 
                 if(status == PH_ERR_INVALID_PARAMETER)
                     break;

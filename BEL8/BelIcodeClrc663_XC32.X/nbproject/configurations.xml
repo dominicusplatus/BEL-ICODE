@@ -125,6 +125,7 @@
         </logicalFolder>
         <itemPath>../NXP/phhwConfig.h</itemPath>
       </logicalFolder>
+      <itemPath>../NXP/hwdef.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"

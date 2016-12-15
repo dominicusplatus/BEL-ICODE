@@ -23,10 +23,15 @@
 *
 */
 
+#include "xc.h"
+#include "hwdef.h"
+
 #include <ph_Status.h>
 #include <phbalReg.h>
 #include <ph_RefDefs.h>
 #include "phhwConfig.h"
+
+#include "plib.h"
 
 #ifdef NXPBUILD__PHBAL_REG_STUB
 
@@ -97,6 +102,25 @@ phStatus_t phbalReg_Stub_OpenPort(
 #ifdef SPI_USED
 
     //TODO - PORT
+    
+        SPISRAM_CS_IO = 1;
+        SPISRAM_CS_TRIS = 0;   // Drive SPI Flash chip select pin
+
+        SPISRAM_SCK_TRIS = 0;  // Set SCK pin as an output
+        SPISRAM_SDI_TRIS = 1;  // Make sure SDI pin is an input
+        SPISRAM_SDO_TRIS = 0;  // Set SDO pin as an output
+
+        
+        // Configure SPI
+        SRAM_SPI_ON_BIT = 0;
+        SPISRAM_SPICON1 = SRAM_PROPER_SPICON1;
+        SRAM_SPI_ON_BIT = 1;
+
+        SPISRAM_SPIBRG = (SYS_PERI_CLK-1ul)/2ul/SPISRAM_SPI_CLK;
+        
+        
+
+        
     
     /*
     PINSEL_CFG_Type PinCfg;
@@ -206,30 +230,17 @@ phStatus_t phbalReg_Stub_MultiRegWrite(
 
     uint16_t xferLen;
     uint8_t index;
-    
-      
-    //TODO - PORT
-    /*
-    SSP_DATA_SETUP_Type xferConfig;
-
     index = 0;
-    xferConfig.length = 2;
-    xferConfig.rx_data = pRxBuffer;
-    xferConfig.tx_data = pTxBuffer;
 
-    while(index < wTxLength)
-    {
-        LPC_GPIO0->FIOCLR = PIN_SSEL;
-
-        xferConfig.rx_data = pRxBuffer;
-        xferConfig.tx_data = pTxBuffer;
-        xferLen = SSP_ReadWrite (LPC_SSP1, &xferConfig, SSP_TRANSFER_POLLING);
-        pTxBuffer++;
-        pRxBuffer++;
-        LPC_GPIO0->FIOSET = PIN_SSEL;
-        index ++;
-     }
-    */
+          SPISRAM_CS_IO =0;
+        while(index < wTxLength)
+        {
+                SpiChnPutC(SPISRAM__SPI_ID,pTxBuffer[index]);   // SSP_ReadWrite (LPC_SSP1, &xferConfig, SSP_TRANSFER_POLLING);
+                pRxBuffer[index] =  SpiChnGetC(SPISRAM__SPI_ID);
+                index ++;
+         }
+         SPISRAM_CS_IO =1;
+   
     
     *pRxLength = xferLen;
 
@@ -248,19 +259,23 @@ phStatus_t phbalReg_Stub_MultiRegRead(
     uint16_t xferLen;
     
     //TODO - PORT
-    /*
-    SSP_DATA_SETUP_Type xferConfig;
-
-    xferConfig.length = wTxLength;
-    xferConfig.rx_data = pRxBuffer;
-    xferConfig.tx_data = pTxBuffer;
-
-    LPC_GPIO0->FIOCLR = PIN_SSEL;
-    xferLen = SSP_ReadWrite (LPC_SSP1, &xferConfig, SSP_TRANSFER_POLLING);
-    LPC_GPIO0->FIOSET = PIN_SSEL;
-*/
     
-    
+   // SSP_DATA_SETUP_Type xferConfig;
+
+   // xferConfig.length = wTxLength;
+   // xferConfig.rx_data = pRxBuffer;
+   // xferConfig.tx_data = pTxBuffer;
+
+      SPISRAM_CS_IO =0;
+         SpiChnGetS(SPISRAM__SPI_ID,pRxBuffer,wTxLength);   // SSP_ReadWrite (LPC_SSP1, &xferConfig, SSP_TRANSFER_POLLING);
+         xferLen = wTxLength;
+        //pRxBuffer[index] =  SpiChnGetC(SPISRAM__SPI_ID);
+      SPISRAM_CS_IO =1;        
+        
+   // LPC_GPIO0->FIOCLR = PIN_SSEL;
+   // xferLen = SSP_ReadWrite (LPC_SSP1, &xferConfig, SSP_TRANSFER_POLLING);
+   // LPC_GPIO0->FIOSET = PIN_SSEL;
+
     *pRxLength = xferLen;
 
     return PH_ADD_COMPCODE(PH_ERR_SUCCESS, PH_COMP_BAL);
@@ -310,16 +325,30 @@ phStatus_t phbalReg_Stub_Exchange(
     }
     else
     {
-        /* chip select reader IC */
+      
         //TODO - PORT
-        /*
-        LPC_GPIO0->FIOCLR = PIN_SSEL;
-       // data exchange 
-        xferLen = SSP_ReadWrite (LPC_SSPx, &xferConfig, SSP_TRANSFER_POLLING);
-        // chip deselect reader IC 
-        LPC_GPIO0->FIOSET = PIN_SSEL;
-        */
         
+          /* chip select reader IC */
+           SPISRAM_CS_IO =0;
+        //LPC_GPIO0->FIOCLR = PIN_SSEL;
+       
+         // data exchange 
+      //  xferLen = SSP_ReadWrite (LPC_SSPx, &xferConfig, SSP_TRANSFER_POLLING);
+        // chip deselect reader IC 
+      //  LPC_GPIO0->FIOSET = PIN_SSEL;
+          int   index = 0;
+      //SpiChnGetS(SPISRAM__SPI_ID,pRxBuffer,wTxLength);   // SSP_ReadWrite (LPC_SSP1, &xferConfig, SSP_TRANSFER_POLLING);
+          SPISRAM_CS_IO =0;
+        while(index < wTxLength)
+        {
+                SpiChnPutC(SPISRAM__SPI_ID,pTxBuffer[index]);   // SSP_ReadWrite (LPC_SSP1, &xferConfig, SSP_TRANSFER_POLLING);
+                pRxBuffer[index] =  SpiChnGetC(SPISRAM__SPI_ID);
+                index ++;
+         }
+         SPISRAM_CS_IO =1;
+         
+      xferLen = wTxLength;
+
         if (xferLen != wTxLength)
         {
             return PH_ADD_COMPCODE(PH_ERR_INTERFACE_ERROR, PH_COMP_BAL);
@@ -331,6 +360,8 @@ phStatus_t phbalReg_Stub_Exchange(
     }
 
 #endif /* SPI_USED */
+    
+    
 #ifdef I2C_USED
     I2C_M_SETUP_Type transferMCfg;
 
